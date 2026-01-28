@@ -39,8 +39,8 @@ export default function Home() {
             key={cat}
             onClick={() => setActiveCategory(cat)}
             className={`px-4 py-2 rounded-xl text-xs font-semibold whitespace-nowrap transition-all ${activeCategory === cat
-                ? "bg-zinc-800 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 shadow-md"
-                : "text-[var(--text-muted)] hover:text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5"
+              ? "bg-zinc-800 dark:bg-zinc-200 text-zinc-100 dark:text-zinc-900 shadow-md"
+              : "text-[var(--text-muted)] hover:text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5"
               }`}
           >
             {cat}
