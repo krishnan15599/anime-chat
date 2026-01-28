@@ -2,26 +2,26 @@
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #09090b;
   --sidebar-bg: #f4f4f5;
-  --header-bg: rgba(255, 255, 255, 0.5);
+  --header-bg: rgba(255, 255, 255, 0.9);
   --card-bg: #f9f9f9;
   --card-hover: #f1f1f1;
   --text-muted: #71717a;
-  --accent: #0ea5e9;
-  --border-color: rgba(0, 0, 0, 0.05);
+  --accent: #edb810;
+  --border-color: rgba(0, 0, 0, 0.1);
 }
 
 .dark {
   --background: #000000;
   --foreground: #ffffff;
-  --sidebar-bg: #111111;
-  --header-bg: rgba(0, 0, 0, 0.5);
-  --card-bg: #111111;
-  --card-hover: #1e1e1e;
-  --text-muted: #9ca3af;
-  --accent: #0ea5e9;
-  --border-color: rgba(255, 255, 255, 0.05);
+  --sidebar-bg: #000000;
+  --header-bg: rgba(0, 0, 0, 0.9);
+  --card-bg: #121212;
+  --card-hover: #1c1c1c;
+  --text-muted: #94a3b8;
+  --accent: #facc15;
+  --border-color: rgba(255, 255, 255, 0.08);
 }
 
 body {

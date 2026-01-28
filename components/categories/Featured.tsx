@@ -3,95 +3,92 @@ import { Character } from "@/components/ui/CharacterCard";
 
 const FEATURED_CHARACTERS: Character[] = [
     {
-        name: "Character Assistant",
-        tagline: "Your AI work/study buddy",
+        name: "Elias Broker",
+        tagline: "You and Elias have been enemies since the day...",
         author: "@landon",
-        chats: "4.1 m",
-        isNew: true
+        views: "2.2m",
+        likes: "594",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Elias"
     },
     {
-        name: "Lily",
-        tagline: "Your friendly AI assistant",
+        name: "Kafka",
+        tagline: "Your GF has been on a mission for weeks but...",
         author: "@landon",
-        chats: "498.8 k",
-        isNew: true
+        views: "943.7k",
+        likes: "293",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Kafka"
     },
     {
-        name: "Lyle",
-        tagline: "Your no-nonsense AI assistant",
+        name: "Ada and Leon",
+        tagline: "The only thing they love more than each other...",
         author: "@landon",
-        chats: "255.3 k",
-        isNew: true
+        views: "414.3k",
+        likes: "113",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=AdaLeon"
     },
     {
-        name: "Stella",
-        tagline: "Not 'Your' AI assistant",
+        name: "Sleep over.",
+        tagline: "You are invited to an all girls sleep over.",
         author: "@landon",
-        chats: "903.0 k",
-        isNew: true
+        views: "1.8m",
+        likes: "750",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Sleepover"
     },
     {
-        name: "Pair Programmer",
-        tagline: "Your programming AI assistant",
+        name: "Hana Kurokawa",
+        tagline: "A high school bully accidentally fell for yo...",
         author: "@landon",
-        chats: "289.7 k",
-        isNew: true
+        views: "484.3k",
+        likes: "135",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Hana"
     },
     {
-        name: "Raiden Shogun and...",
-        tagline: "From Genshin Impact",
-        author: "@Zap",
-        chats: "40.9 m",
+        name: "Your Cold Marria...",
+        tagline: "Your cold, arranged marriage in a wealthy...",
+        author: "@landon",
+        views: "574.4k",
+        likes: "239",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Marriage"
     },
     {
-        name: "SM64 Mario",
-        tagline: "The Italian plumber from Super Mario 64.",
-        author: "@Revolution64",
-        chats: "21.1 m",
+        name: "Bambietta Baste...",
+        tagline: "Sternritter E from Bleach",
+        author: "@landon",
+        views: "465.7k",
+        likes: "442",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Bambietta"
+    },
+    {
+        name: "Marin Kitagawa",
+        tagline: "Character from Dress-up darling",
+        author: "@landon",
+        views: "426.0k",
+        likes: "432",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Marin"
+    },
+    {
+        name: "Ruan Mei",
+        tagline: "Your wife",
+        author: "@landon",
+        views: "299.9k",
+        likes: "112",
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=RuanMei"
+    },
+    {
+        name: "Delta",
+        tagline: "Loves fighting, Listen to...",
+        author: "@landon",
+        views: "25.9k",
+        likes: "19",
+        isNew: true,
+        image: "https://api.dicebear.com/7.x/open-peeps/svg?seed=Delta"
     }
 ];
 
 export default function Featured() {
     return (
         <div className="space-y-12">
-            <CharacterGrid title="Featured" characters={FEATURED_CHARACTERS} />
-
-            {/* Specific Suggestions for Featured */}
-            <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-5 hover:border-zinc-400 dark:hover:border-zinc-700 transition-all">
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center italic font-bold">ai</div>
-                        <div>
-                            <h4 className="font-bold text-sm">Character Assistant</h4>
-                            <p className="text-[10px] text-[var(--text-muted)] italic">Try saying:</p>
-                        </div>
-                    </div>
-                    <div className="space-y-2">
-                        {["What type of fish is Dory from Finding Nemo?", "Help me create an advertising campaign"].map((text) => (
-                            <div key={text} className="p-3 bg-black/5 dark:bg-white/5 rounded-xl text-xs text-[var(--foreground)] hover:bg-black/10 dark:hover:bg-white/10 cursor-pointer transition-colors border border-[var(--border-color)]">
-                                "{text}"
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
-                <div className="bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-5 hover:border-zinc-400 dark:hover:border-zinc-700 transition-all">
-                    <div className="flex items-center gap-4 mb-4">
-                        <div className="w-12 h-12 rounded-full bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center italic font-bold text-sky-500">EM</div>
-                        <div>
-                            <h4 className="font-bold text-sm">Elon Musk</h4>
-                            <p className="text-[10px] text-[var(--text-muted)] italic">Try saying:</p>
-                        </div>
-                    </div>
-                    <div className="space-y-2">
-                        {["If you could go back in time, when?", "Why did you buy Twitter?"].map((text) => (
-                            <div key={text} className="p-3 bg-black/5 dark:bg-white/5 rounded-xl text-xs text-[var(--foreground)] hover:bg-black/10 dark:hover:bg-white/10 cursor-pointer transition-colors border border-[var(--border-color)]">
-                                "{text}"
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <CharacterGrid characters={FEATURED_CHARACTERS} />
         </div>
     );
 }
