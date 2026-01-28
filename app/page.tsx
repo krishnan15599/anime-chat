@@ -10,18 +10,18 @@ const CATEGORIES = [
   "Anime", "Companionship", "OC", "Games", "Game Characters", "BL & ABO", "VTuber"
 ];
 
-const STATS = [
-  { label: "Views", value: "97.7k", icon: "👁️" },
-  { label: "Likes", value: "47", icon: "❤️" },
-  { label: "Chats", value: "2.4m", icon: "💬" },
-  { label: "Users", value: "1.6k", icon: "👥" },
-  { label: "Growth", value: "3.3m", icon: "📈" },
-  { label: "Followers", value: "3.6k", icon: "👤" },
-  { label: "Daily", value: "36.9k", icon: "📅" },
-  { label: "Live", value: "14", icon: "🔥" },
-  { label: "New", value: "2.5k", icon: "🆕" },
-  { label: "Stars", value: "3", icon: "⭐" },
-];
+// const STATS = [
+//   { label: "Views", value: "97.7k", icon: "👁️" },
+//   { label: "Likes", value: "47", icon: "❤️" },
+//   { label: "Chats", value: "2.4m", icon: "💬" },
+//   { label: "Users", value: "1.6k", icon: "👥" },
+//   { label: "Growth", value: "3.3m", icon: "📈" },
+//   { label: "Followers", value: "3.6k", icon: "👤" },
+//   { label: "Daily", value: "36.9k", icon: "📅" },
+//   { label: "Live", value: "14", icon: "🔥" },
+//   { label: "New", value: "2.5k", icon: "🆕" },
+//   { label: "Stars", value: "3", icon: "⭐" },
+// ];
 
 export default function Home() {
   const [activeCategory, setActiveCategory] = useState("Anime");
@@ -71,14 +71,14 @@ export default function Home() {
         </div>
 
         {/* Stats Bar */}
-        <div className="flex items-center gap-8 overflow-x-auto no-scrollbar pb-2">
+        {/* <div className="flex items-center gap-8 overflow-x-auto no-scrollbar pb-2">
           {STATS.map((stat, i) => (
             <div key={i} className="flex items-center gap-1.5 whitespace-nowrap">
               <span className="text-xs opacity-70 grayscale">{stat.icon}</span>
               <span className="text-[11px] font-black text-[var(--foreground)] opacity-90">{stat.value}</span>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
 
       {/* Dynamic Category Content */}
