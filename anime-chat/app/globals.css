@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --sidebar-bg: #f4f4f5;
+  --header-bg: rgba(255, 255, 255, 0.5);
+  --card-bg: #f9f9f9;
+  --card-hover: #f1f1f1;
+  --text-muted: #71717a;
+  --accent: #0ea5e9;
+  --border-color: rgba(0, 0, 0, 0.05);
+}
+
+.dark {
+  --background: #000000;
+  --foreground: #ffffff;
+  --sidebar-bg: #111111;
+  --header-bg: rgba(0, 0, 0, 0.5);
+  --card-bg: #111111;
+  --card-hover: #1e1e1e;
+  --text-muted: #9ca3af;
+  --accent: #0ea5e9;
+  --border-color: rgba(255, 255, 255, 0.05);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  margin: 0;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
