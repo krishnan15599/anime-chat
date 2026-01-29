@@ -5,22 +5,10 @@ import { ChevronDown } from "lucide-react";
 import Featured from "@/components/categories/Featured";
 import Discover from "@/components/categories/Discover";
 import Helpers from "@/components/categories/Helpers";
+import Footer from "@/components/layout/Footer";
 
 const CATEGORIES = [
   "Anime", "Companionship", "OC", "Games", "Game Characters", "BL & ABO", "VTuber"
-];
-
-const STATS = [
-  { label: "Views", value: "97.7k", icon: "👁️" },
-  { label: "Likes", value: "47", icon: "❤️" },
-  { label: "Chats", value: "2.4m", icon: "💬" },
-  { label: "Users", value: "1.6k", icon: "👥" },
-  { label: "Growth", value: "3.3m", icon: "📈" },
-  { label: "Followers", value: "3.6k", icon: "👤" },
-  { label: "Daily", value: "36.9k", icon: "📅" },
-  { label: "Live", value: "14", icon: "🔥" },
-  { label: "New", value: "2.5k", icon: "🆕" },
-  { label: "Stars", value: "3", icon: "⭐" },
 ];
 
 export default function Home() {
@@ -70,20 +58,15 @@ export default function Home() {
           </button>
         </div>
 
-        {/* Stats Bar */}
-        <div className="flex items-center gap-8 overflow-x-auto no-scrollbar pb-2">
-          {STATS.map((stat, i) => (
-            <div key={i} className="flex items-center gap-1.5 whitespace-nowrap">
-              <span className="text-xs opacity-70 grayscale">{stat.icon}</span>
-              <span className="text-[11px] font-black text-[var(--foreground)] opacity-90">{stat.value}</span>
-            </div>
-          ))}
-        </div>
       </div>
 
       {/* Dynamic Category Content */}
       <div className="transition-all duration-500">
         {renderCategory()}
+      </div>
+
+      <div className="mt-6">
+        <Footer />
       </div>
     </div>
   );

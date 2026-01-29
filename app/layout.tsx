@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className="bg-[var(--background)] text-[var(--foreground)] antialiased transition-colors duration-300 overflow-hidden">
+      <body className="bg-[var(--background)] text-[var(--foreground)] antialiased transition-none overflow-hidden">
         <Providers>
           <div className="flex h-screen w-screen bg-[var(--background)]">
             <Sidebar />

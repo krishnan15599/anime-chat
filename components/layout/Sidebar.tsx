@@ -16,7 +16,7 @@ export default function Sidebar() {
     const pathname = usePathname();
 
     return (
-        <aside className="fixed left-0 top-0 z-40 h-screen w-20 flex-col items-center border-r border-[var(--border-color)] bg-[var(--sidebar-bg)] py-8 hidden sm:flex transition-colors duration-300">
+        <aside className="fixed left-0 top-0 z-40 h-screen w-20 flex-col items-center border-r border-[var(--border-color)] bg-[var(--sidebar-bg)] py-8 hidden sm:flex transition-none">
             <div className="mb-8 p-2">
                 <div className="h-10 w-10 rounded-xl bg-sky-500 flex items-center justify-center font-bold text-white italic shadow-lg shadow-sky-500/20">
                     ai
@@ -31,10 +31,10 @@ export default function Sidebar() {
                         <Link
                             key={item.label}
                             href={item.href}
-                            className={`group relative flex flex-col items-center gap-1 transition-colors ${isActive ? "text-[var(--foreground)]" : "text-[var(--text-muted)] hover:text-[var(--foreground)]"
+                            className={`group relative flex flex-col items-center gap-1 ${isActive ? "text-[var(--foreground)]" : "text-[var(--text-muted)] hover:text-[var(--foreground)]"
                                 }`}
                         >
-                            <div className={`p-2 rounded-xl transition-colors ${isActive ? "bg-black/5 dark:bg-white/10" : "group-hover:bg-black/5 dark:group-hover:bg-white/5"
+                            <div className={`p-2 rounded-xl ${isActive ? "bg-black/5 dark:bg-white/10" : "group-hover:bg-black/5 dark:group-hover:bg-white/5"
                                 }`}>
                                 <Icon size={24} />
                             </div>
@@ -45,7 +45,7 @@ export default function Sidebar() {
             </nav>
 
             <div className="mt-auto">
-                <button className="text-[var(--text-muted)] hover:text-[var(--foreground)] transition-colors p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/5">
+                <button className="text-[var(--text-muted)] hover:text-[var(--foreground)] p-2 rounded-xl hover:bg-black/5 dark:hover:bg-white/5">
                     <Settings size={22} />
                 </button>
             </div>
