@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { Search, BookOpen, HelpCircle, ChevronDown } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 
@@ -29,12 +30,12 @@ export default function Header() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <button className="px-4 py-2 text-sm font-semibold text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5 rounded-full whitespace-nowrap">
+                    <Link href="/login" className="px-4 py-2 text-sm font-semibold text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5 rounded-full whitespace-nowrap">
                         Log In
-                    </button>
-                    <button className="px-5 py-2 text-sm font-bold bg-sky-600 hover:bg-sky-500 text-white rounded-full whitespace-nowrap">
+                    </Link>
+                    <Link href="/signup" className="px-5 py-2 text-sm font-bold bg-sky-600 hover:bg-sky-500 text-white rounded-full whitespace-nowrap">
                         Sign Up
-                    </button>
+                    </Link>
                 </div>
             </div>
         </header>
