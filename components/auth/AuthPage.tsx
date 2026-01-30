@@ -34,7 +34,7 @@ export default function AuthPage({ mode }: AuthPageProps) {
 
                 {/* Logo */}
                 <div className="absolute top-4 left-6 z-20 text-white font-black text-xl italic drop-shadow-md">
-                    talkie
+                    Animora
                 </div>
 
                 {/* Hero Images Banner */}
@@ -61,7 +61,7 @@ export default function AuthPage({ mode }: AuthPageProps) {
                     <p className="text-[var(--text-muted)] text-sm mb-8 px-4 leading-relaxed">
                         {isLogin
                             ? "Log in to continue your conversations with any character!"
-                            : "Create an account to unlock free chats with any Talkie!"
+                            : "Create an account to unlock free chats with any character!"
                         }
                     </p>
 
@@ -87,7 +87,7 @@ export default function AuthPage({ mode }: AuthPageProps) {
                     </div>
 
                     <div className="mt-8 text-[10px] text-[var(--text-muted)] px-8 leading-normal">
-                        By continuing, you agree to Talkie's{" "}
+                        By continuing, you agree to Animora's{" "}
                         <Link href="#" className="underline hover:text-[var(--foreground)] cursor-pointer">Terms of Service</Link>
                         {" "}and{" "}
                         <Link href="#" className="underline hover:text-[var(--foreground)] cursor-pointer">Privacy Policy</Link>

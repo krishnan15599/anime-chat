@@ -44,7 +44,7 @@ export default function ChatInterface({ charName, charAvatar }: ChatInterfacePro
                             <span>9.5K</span>
                         </div>
                         <div className="flex items-center gap-1">
-                            <span>By @Talkie 1082786</span>
+                            <span>By @Animora 1082786</span>
                         </div>
                     </div>
                     <button className="px-10 py-2.5 bg-white text-black font-black rounded-full text-sm hover:bg-zinc-200 transition-colors uppercase tracking-wider">
