@@ -22,14 +22,14 @@ export default function CharacterCard({ character }: CharacterCardProps) {
     const charId = character.name.toLowerCase().replace(/\s+/g, '-');
 
     return (
-        <div className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-xl bg-[var(--card-bg)] hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/20 dark:hover:shadow-black/50 border border-[var(--border-color)]">
+        <div className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-xl bg-[var(--card-bg)] hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/20 dark:hover:shadow-black/50 border border-[var(--border-color)] transition-all duration-300 ease-out">
             {/* Background Image */}
             <div className="absolute inset-0 z-0 text-[var(--foreground)] flex items-center justify-center font-bold italic text-4xl">
                 ai
                 <img
                     src={character.image || defaultImage}
                     alt={character.name}
-                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-110"
+                    className="absolute inset-0 h-full w-full object-cover group-hover:scale-110 transition-transform duration-500 ease-out"
                 />
                 {/* Gradient Overlays - Themed */}
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent dark:from-black dark:via-black/40 dark:to-transparent" />
@@ -46,7 +46,15 @@ export default function CharacterCard({ character }: CharacterCardProps) {
 
                 <div className="flex-1 min-h-0 mb-4 overflow-hidden">
                     <p className="text-white text-xs leading-relaxed line-clamp-[7]">
-                        {character.description || character.tagline}
+                        {(character.description || character.tagline).split(" ").map((word, i) => (
+                            <span
+                                key={i}
+                                className="inline-block opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 ease-out"
+                                style={{ transitionDelay: `${i * 70}ms` }}
+                            >
+                                {word}&nbsp;
+                            </span>
+                        ))}
                     </p>
                 </div>
 
@@ -67,7 +75,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
             )}
 
             {/* Content (Visible when not hovered) */}
-            <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col p-4 group-hover:opacity-0 transition-opacity">
+            <div className="absolute inset-x-0 bottom-0 z-10 flex flex-col p-4 group-hover:opacity-0 transition-opacity duration-300">
                 <h3 className="text-sm font-black text-white group-hover:text-yellow-400 transition-colors line-clamp-1 mb-1">
                     {character.name}
                 </h3>
