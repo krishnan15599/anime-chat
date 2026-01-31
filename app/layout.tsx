@@ -6,8 +6,8 @@ import RightSidebar from "@/components/layout/RightSidebar";
 import { Providers } from "@/components/Providers";
 
 export const metadata: Metadata = {
-  title: "Character.ai Clone",
-  description: "An anime chat application inspired by character.ai",
+  title: "Animora",
+  description: "An anime chat application inspired by Animora",
 };
 
 export default function RootLayout({

@@ -71,12 +71,12 @@ export default function CharacterProfile({ charName, charAvatar }: CharacterProf
                     {/* New Comment Input */}
                     <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--border-color)] shrink-0 flex items-center justify-center">
-                            <img src="/talkie-icon.png" alt="icon" className="w-5 h-5 opacity-30 invert dark:invert-0" />
+                            <UserPlus size={20} className="w-5 h-5 opacity-30" />
                         </div>
                         <div className="flex-1">
                             <input
                                 type="text"
-                                placeholder="Type your comment about this Talkie..."
+                                placeholder="Type your comment about this character..."
                                 className="w-full bg-black/5 dark:bg-zinc-800/40 border border-[var(--border-color)] rounded-full py-3 px-5 text-xs outline-none focus:border-[var(--foreground)]/30 transition-colors"
                             />
                         </div>
@@ -89,7 +89,7 @@ export default function CharacterProfile({ charName, charAvatar }: CharacterProf
                                 <div className="w-10 h-10 rounded-full bg-zinc-800 border border-[var(--border-color)] shrink-0" />
                                 <div className="flex-1">
                                     <div className="flex items-center gap-2 mb-1">
-                                        <span className="text-xs font-black">Talkior-ydLOPWTA</span>
+                                        <span className="text-xs font-black">User-ydLOPWTA</span>
                                         <span className="text-[10px] text-[var(--text-muted)]">25/01/2026</span>
                                     </div>
                                     <p className="text-xs text-[var(--foreground)] leading-relaxed">so kind</p>
