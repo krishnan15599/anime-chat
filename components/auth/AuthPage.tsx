@@ -3,18 +3,11 @@
 import { X } from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 interface AuthPageProps {
     mode: "login" | "signup";
 }
-
-const BANNER_IMAGES = [
-    "https://api.dicebear.com/7.x/open-peeps/svg?seed=Elias",
-    "https://api.dicebear.com/7.x/open-peeps/svg?seed=Kafka",
-    "https://api.dicebear.com/7.x/open-peeps/svg?seed=AdaLeon",
-    "https://api.dicebear.com/7.x/open-peeps/svg?seed=Bambietta",
-    "https://api.dicebear.com/7.x/open-peeps/svg?seed=Marin"
-];
 
 export default function AuthPage({ mode }: AuthPageProps) {
     const router = useRouter();
@@ -27,30 +20,28 @@ export default function AuthPage({ mode }: AuthPageProps) {
                 {/* Close Button */}
                 <button
                     onClick={() => router.back()}
-                    className="absolute top-4 right-4 z-20 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors cursor-pointer backdrop-blur-md"
+                    className="absolute top-4 right-4 z-50 p-2 rounded-full bg-black/20 text-white hover:bg-black/40 transition-colors cursor-pointer backdrop-blur-md"
                 >
                     <X size={20} />
                 </button>
 
-                {/* Logo */}
-                <div className="absolute top-4 left-6 z-20 text-white font-black text-xl italic drop-shadow-md">
-                    talkie
-                </div>
+                {/* Logo Text */}
+                {/* <div className="absolute top-4 left-6 z-50 text-white font-black text-xl italic drop-shadow-md">
+                    Animora
+                </div>       */}
 
-                {/* Hero Images Banner */}
-                <div className="h-48 grid grid-cols-5 gap-0 relative">
+                {/* Hero Banner (Single Local Image) */}
+                <div className="h-48 relative flex items-center justify-center bg-black">
                     {/* Gradient Overlay */}
-                    <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/30 via-transparent to-[var(--background)]" />
+                    <div className="absolute inset-0 z-10 bg-gradient-to-b from-black/40 via-transparent to-[var(--background)]" />
 
-                    {BANNER_IMAGES.map((img, i) => (
-                        <div key={i} className="h-full relative group overflow-hidden">
-                            <img
-                                src={img}
-                                alt="Character"
-                                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                            />
-                        </div>
-                    ))}
+                    <Image
+                        src="/assets/logo/logo.png"
+                        alt="Animora Logo"
+                        fill
+                        priority
+                        className="object-cover"
+                    />
                 </div>
 
                 {/* Content */}
@@ -58,10 +49,11 @@ export default function AuthPage({ mode }: AuthPageProps) {
                     <h1 className="text-3xl font-black mb-3">
                         {isLogin ? "Welcome back." : "Create an account."}
                     </h1>
+
                     <p className="text-[var(--text-muted)] text-sm mb-8 px-4 leading-relaxed">
                         {isLogin
                             ? "Log in to continue your conversations with any character!"
-                            : "Create an account to unlock free chats with any Talkie!"
+                            : "Create an account to unlock free chats with any character!"
                         }
                     </p>
 
@@ -87,10 +79,14 @@ export default function AuthPage({ mode }: AuthPageProps) {
                     </div>
 
                     <div className="mt-8 text-[10px] text-[var(--text-muted)] px-8 leading-normal">
-                        By continuing, you agree to Talkie's{" "}
-                        <Link href="#" className="underline hover:text-[var(--foreground)] cursor-pointer">Terms of Service</Link>
-                        {" "}and{" "}
-                        <Link href="#" className="underline hover:text-[var(--foreground)] cursor-pointer">Privacy Policy</Link>
+                        By continuing, you agree to Animora&apos;s{" "}
+                        <Link href="#" className="underline hover:text-[var(--foreground)] cursor-pointer">
+                            Terms of Service
+                        </Link>{" "}
+                        and{" "}
+                        <Link href="#" className="underline hover:text-[var(--foreground)] cursor-pointer">
+                            Privacy Policy
+                        </Link>
                     </div>
 
                     <div className="mt-6 pt-6 border-t border-[var(--border-color)]">
@@ -110,9 +106,21 @@ export default function AuthPage({ mode }: AuthPageProps) {
     );
 }
 
-function SocialButton({ icon, label, bgColor, textColor }: { icon: string, label: string, bgColor: string, textColor: string }) {
+function SocialButton({
+    icon,
+    label,
+    bgColor,
+    textColor,
+}: {
+    icon: string;
+    label: string;
+    bgColor: string;
+    textColor: string;
+}) {
     return (
-        <button className={`w-full h-12 rounded-full font-bold text-sm flex items-center justify-center relative transition-transform active:scale-[0.98] cursor-pointer ${bgColor} ${textColor}`}>
+        <button
+            className={`w-full h-12 rounded-full font-bold text-sm flex items-center justify-center relative transition-transform active:scale-[0.98] cursor-pointer ${bgColor} ${textColor}`}
+        >
             <span className="absolute left-4 text-lg font-serif">{icon}</span>
             {label}
         </button>
