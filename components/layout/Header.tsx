@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Search, BookOpen, HelpCircle, ChevronDown } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
+import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 
 export default function Header() {
     return (
@@ -30,12 +31,17 @@ export default function Header() {
                 </div>
 
                 <div className="flex items-center gap-2">
-                    <Link href="/login" className="px-4 py-2 text-sm font-semibold text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5 rounded-full whitespace-nowrap">
-                        Log In
-                    </Link>
-                    <Link href="/signup" className="px-5 py-2 text-sm font-bold bg-sky-600 hover:bg-sky-500 text-white rounded-full whitespace-nowrap">
-                        Sign Up
-                    </Link>
+                    <SignedOut>
+                        <Link href="/login" className="px-4 py-2 text-sm font-semibold text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5 rounded-full whitespace-nowrap">
+                            Log In
+                        </Link>
+                        <Link href="/signup" className="px-5 py-2 text-sm font-bold bg-sky-600 hover:bg-sky-500 text-white rounded-full whitespace-nowrap">
+                            Sign Up
+                        </Link>
+                    </SignedOut>
+                    <SignedIn>
+                        <UserButton afterSignOutUrl="/login" />
+                    </SignedIn>
                 </div>
             </div>
         </header>
