@@ -4,6 +4,7 @@ import Sidebar from "@/components/layout/Sidebar";
 import Header from "@/components/layout/Header";
 import RightSidebar from "@/components/layout/RightSidebar";
 import { Providers } from "@/components/Providers";
+import { ClerkProvider } from "@clerk/nextjs";
 
 export const metadata: Metadata = {
   title: "Animora",
@@ -16,25 +17,27 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="bg-[var(--background)] text-[var(--foreground)] antialiased transition-none overflow-hidden">
-        <Providers>
-          <div className="flex h-screen w-screen bg-[var(--background)]">
-            <Sidebar />
-            <div className="flex flex-col flex-1 min-w-0">
-              <Header />
-              <main className="flex-1 overflow-y-auto sm:pl-20 pt-16">
-                <div className="flex h-full">
-                  <div className="flex-1 min-w-0">
-                    {children}
+    <ClerkProvider>
+      <html lang="en" suppressHydrationWarning>
+        <body className="bg-[var(--background)] text-[var(--foreground)] antialiased transition-none overflow-hidden">
+          <Providers>
+            <div className="flex h-screen w-screen bg-[var(--background)]">
+              <Sidebar />
+              <div className="flex flex-col flex-1 min-w-0">
+                <Header />
+                <main className="flex-1 overflow-y-auto sm:pl-20 pt-16">
+                  <div className="flex h-full">
+                    <div className="flex-1 min-w-0">
+                      {children}
+                    </div>
+                    <RightSidebar />
                   </div>
-                  <RightSidebar />
-                </div>
-              </main>
+                </main>
+              </div>
             </div>
-          </div>
-        </Providers>
-      </body>
-    </html>
+          </Providers>
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }
