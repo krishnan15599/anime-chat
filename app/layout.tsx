@@ -6,6 +6,13 @@ import RightSidebar from "@/components/layout/RightSidebar";
 import { Providers } from "@/components/Providers";
 import { ClerkProvider } from "@clerk/nextjs";
 
+if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
+  console.error("********************************************************************************");
+  console.error("CRITICAL ERROR: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY is missing from environment variables!");
+  console.error("Please add this key to your Vercel Project Settings > Environment Variables.");
+  console.error("********************************************************************************");
+}
+
 export const metadata: Metadata = {
   title: "Animora",
   description: "An anime chat application inspired by Animora",
