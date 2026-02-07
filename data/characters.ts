@@ -3,1812 +3,1666 @@ import { Character } from "@/components/ui/CharacterCard";
 export const ALL_CHARACTERS: Record<string, Character[]> = {
     "Maid": [
         {
-            name: "Rem",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "255k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%209960588?width=512&height=768"
+            name: "Maid-chan",
+            tagline: "メイドちゃん",
+            description: "Maid is Ryuunosuke's artificial intelligence (AI) program he wrote personally. Originally, Ryuunosuke designed Maid to filter and automatically reply ...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "6k",
+            image: "https://cdn.myanimelist.net/images/characters/7/324809.jpg"
         },
         {
-            name: "Ram",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "36k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%204284578?width=512&height=768"
+            name: "Iron Maiden Jeanne",
+            tagline: "アイアン・メイデン・ジャンヌ",
+            description: "Iron Maiden Jeanne is a fictional character from the anime series Shaman King. She is voiced by Yui Horie in the Japanese version. She was born on Mar...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/12/464087.jpg"
         },
         {
-            name: "Tohru",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "293k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%201754267?width=512&height=768"
+            name: "Maid-fuku Kamen",
+            tagline: "メイド服仮面",
+            description: "A popular Maid character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/2/442633.jpg"
         },
         {
-            name: "Roberta",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.6m",
-            likes: "488k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%206277083?width=512&height=768"
+            name: "Maid Ane",
+            tagline: "メイド姉",
+            description: "Two young sisters who took refuge at the Crimson Scholar's estate. Coming from a serf family of seven siblings, the sisters' other siblings died from ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/6/193347.jpg"
         },
         {
-            name: "Mey-Rin",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.7m",
-            likes: "446k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%205358931?width=512&height=768"
+            name: "Maidena Ange",
+            tagline: "メイデナ・アンジェ",
+            description: "Maidena is a genius magician who has an exceptional guard job. A healer who can heal injuries instantly, she is indispensable for subjugating dangerou...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/2/484411.jpg"
         },
         {
-            name: "Virgo",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "49k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%208177970?width=512&height=768"
+            name: "Maid",
+            tagline: "Maid Anime Character",
+            description: "The Chainsaw Maid. No voice actors have been added to this character. Help improve our database by searching for a voice actor, and adding this charac...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/14/137281.jpg"
         },
         {
-            name: "Sakuya",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "108k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%202791000?width=512&height=768"
+            name: "Maid Imouto",
+            tagline: "メイド妹",
+            description: "Two young sisters who took refuge at the Crimson Scholar's estate. Coming from a serf family of seven siblings, the sisters' other siblings died from ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/10/192473.jpg"
         },
         {
-            name: "Maria",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "59k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%207096741?width=512&height=768"
+            name: "Maid B",
+            tagline: "メイドB",
+            description: "A popular Maid character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"
         },
         {
-            name: "Nako",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.6m",
-            likes: "474k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%205224224?width=512&height=768"
+            name: "Kokoro Maida",
+            tagline: "米田 心",
+            description: "A little kid who's taken a liking to Shizuru. Expressionless and fairly untalkative. But she's got quite an appetite. For some reason she calls Shizur...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/15/371530.jpg"
         },
         {
-            name: "Chihiro",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "269k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%20839321?width=512&height=768"
+            name: "Lion Ace Maid",
+            tagline: "獅子エースメイド",
+            description: "A popular Maid character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/497628.jpg"
         },
         {
-            name: "Misaki",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "456k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%208556984?width=512&height=768"
+            name: "Head Maid",
+            tagline: "Maid Anime Character",
+            description: "Tamaki's head maid.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/3/108704.jpg"
         },
         {
-            name: "Mikuru",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "191k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%206269916?width=512&height=768"
+            name: "Maid Chou",
+            tagline: "メイド長",
+            description: "The Demon King's most trusted servant and commander of her army. She usually does not refrain from expressing her point of view even before her master...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/8/192471.jpg"
         },
         {
-            name: "Felis",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.6m",
-            likes: "487k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%207360464?width=512&height=768"
+            name: "Maid",
+            tagline: "메이드",
+            description: "The blind family maid to Eun Sung-Min. She pledged to be Father and Mother to him when his parents died in the Evil Phenomenon. She has no memories of...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/3/115522.jpg"
         },
         {
-            name: "Ai",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "22k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%206711839?width=512&height=768"
+            name: "Tresalisa Maiden",
+            tagline: "テレサリサ・メイデン",
+            description: "A popular Maid character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/8/457220.jpg"
         },
         {
-            name: "Mei",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "23k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%204012431?width=512&height=768"
-        },
-        {
-            name: "Hina",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.6m",
-            likes: "245k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%209799271?width=512&height=768"
-        },
-        {
-            name: "Yuki",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "101k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%202673818?width=512&height=768"
-        },
-        {
-            name: "Sakura",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "378k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%209362316?width=512&height=768"
-        },
-        {
-            name: "Mio",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "377k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%204617143?width=512&height=768"
-        },
-        {
-            name: "Rina",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "262k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%204915139?width=512&height=768"
-        },
-        {
-            name: "Sora",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "41k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%202037988?width=512&height=768"
-        },
-        {
-            name: "Yuna",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "72k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%207258761?width=512&height=768"
-        },
-        {
-            name: "Kaira",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "62k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%202438555?width=512&height=768"
-        },
-        {
-            name: "Luna",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "128k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%201840182?width=512&height=768"
-        },
-        {
-            name: "Mina",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "112k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%203385272?width=512&height=768"
-        },
-        {
-            name: "Nana",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "270k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%205525778?width=512&height=768"
-        },
-        {
-            name: "Lili",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "463k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%207628713?width=512&height=768"
-        },
-        {
-            name: "Rose",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "384k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%208975413?width=512&height=768"
-        },
-        {
-            name: "Viola",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "447k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%203910100?width=512&height=768"
-        },
-        {
-            name: "Iris",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "316k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%205460573?width=512&height=768"
-        },
-        {
-            name: "Bella",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "298k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%202119128?width=512&height=768"
-        },
-        {
-            name: "Anna",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "420k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%208832055?width=512&height=768"
-        },
-        {
-            name: "Cora",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "406k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%203500079?width=512&height=768"
-        },
-        {
-            name: "Dina",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.7m",
-            likes: "7k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%206162533?width=512&height=768"
-        },
-        {
-            name: "Elsa",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.7m",
-            likes: "498k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%209079275?width=512&height=768"
-        },
-        {
-            name: "Flora",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "16k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%208942473?width=512&height=768"
-        },
-        {
-            name: "Gina",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "123k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%206472425?width=512&height=768"
-        },
-        {
-            name: "Hana",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.6m",
-            likes: "337k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%205353866?width=512&height=768"
-        },
-        {
-            name: "Ivy",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "124k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%202656299?width=512&height=768"
-        },
-        {
-            name: "Joy",
-            tagline: "Maid Character",
-            description: "A unique Maid character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "131k",
-            image: "https://image.pollinations.ai/prompt/anime%20style%20maid%20character%2C%20beautiful%2C%20detailed%20frilly%20dress%2C%20cute%2C%20masterpiece%2C%208k%2C%20vibrant%20colors%20--seed%203866906?width=512&height=768"
+            name: "Maid",
+            tagline: "Maid Anime Character",
+            description: "She is the one that offers Ichijou a roughly 3 meters tall stack of books regarding Kaname's past, and is also the one to notify Ichijou that his gran...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/11/278864.jpg"
         },
     ],
     "Warrior": [
         {
-            name: "Saber",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "286k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%207874794?width=512&height=768"
+            name: "Wario",
+            tagline: "ワリオ",
+            description: "One of Mario's most frequently appearing rivals. Wario is an overweight, crude, and greedy man who loves garlic and money. He is often seen alongside ...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "6k",
+            image: "https://cdn.myanimelist.net/images/characters/12/522148.jpg"
         },
         {
-            name: "Erza",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "78k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208730520?width=512&height=768"
+            name: "Female Warrior",
+            tagline: "女戦士",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/7/603590.jpg"
         },
         {
-            name: "Mikasa",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "173k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%207063594?width=512&height=768"
+            name: "Warrius Zero",
+            tagline: "ウォーリアス・ゼロ",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/493995.jpg"
         },
         {
-            name: "Clare",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "379k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%209265021?width=512&height=768"
+            name: "Carrion",
+            tagline: "カリオン",
+            description: "The King of Beast Kingdom Eurazania and former Demon Lord of the Ten Great Demon Lords, now serving as Milim Nava's aide alongside Frey. (Source: Tens...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/3/437993.jpg"
         },
         {
-            name: "Teresa",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "212k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%203699733?width=512&height=768"
+            name: "Warrod Sequen",
+            tagline: "ウォーロッド・シーケン",
+            description: "Warrod Sequen is one of the Ten Wizard Saints and among them, the 4th God of Ishgar. He was also one of the founding members of Fairy Tail. (Source: F...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/369133.jpg"
         },
         {
-            name: "Casca",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "369k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%203427025?width=512&height=768"
+            name: "Claus Warrick",
+            tagline: "クラウス・ウォリック",
+            description: "Rank: Lieutenant Colonel Occupation: Aide-de-camp and Military Officer Claus Warwick is Leila Malcal's aide-de-camp in the E.U. military's Special For...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/8/195173.jpg"
         },
         {
-            name: "Balsa",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "348k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208673777?width=512&height=768"
+            name: "Warrior Gorilla",
+            tagline: "戦士ゴリラ",
+            description: "Sein's childhood friend. At a young age, he went on a journey, dreaming of becoming a legendary hero.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/4/530186.jpg"
         },
         {
-            name: "Ryuko",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.7m",
-            likes: "303k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%2020860?width=512&height=768"
+            name: "Martha Marriott",
+            tagline: "マーサ・マリオット",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/5/531187.jpg"
         },
         {
-            name: "Satsuki",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "158k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%206688206?width=512&height=768"
+            name: "Wario Hashida",
+            tagline: "橋田 割男",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/15/273911.jpg"
         },
         {
-            name: "Akame",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "466k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%206675251?width=512&height=768"
+            name: "Accela Warrick",
+            tagline: "アクセラ・ウォリック",
+            description: "Age: 20 Height: 155 cm (5'1\") Hair Color: Red Eye Color: Green A redheaded, shy, information specialist of the PROCEED Team. Accela is a good cook. S...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/11/79940.jpg"
         },
         {
-            name: "Leone",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "101k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%203306574?width=512&height=768"
+            name: "Warrior",
+            tagline: "勇士",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/16/597899.jpg"
         },
         {
-            name: "Maka",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "90k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%204205152?width=512&height=768"
+            name: "Warrior",
+            tagline: "Warrior Anime Character",
+            description: "Warriors are physical battlers who use weapons like axes and swords to take on enemies. Most males in the Netherworld can become Warriors, though one ...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/11/584666.jpg"
         },
         {
-            name: "Asuna",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "321k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%20443764?width=512&height=768"
+            name: "Warrior",
+            tagline: "Warrior Anime Character",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/13/557827.jpg"
         },
         {
-            name: "Sinon",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "131k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%203047103?width=512&height=768"
+            name: "Warrior",
+            tagline: "Warrior Anime Character",
+            description: "A popular Warrior character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/13/557733.jpg"
         },
         {
-            name: "Alice",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "264k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%204251419?width=512&height=768"
-        },
-        {
-            name: "Jeanne",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "76k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%204810058?width=512&height=768"
-        },
-        {
-            name: "Mordred",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "69k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%20519784?width=512&height=768"
-        },
-        {
-            name: "Scathach",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "151k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%209022884?width=512&height=768"
-        },
-        {
-            name: "Atalanta",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.8m",
-            likes: "224k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%207374543?width=512&height=768"
-        },
-        {
-            name: "Boudica",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "383k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%203288947?width=512&height=768"
-        },
-        {
-            name: "Zenobia",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "95k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%206878012?width=512&height=768"
-        },
-        {
-            name: "Tomoe",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "228k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%206834322?width=512&height=768"
-        },
-        {
-            name: "Mulan",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "122k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208418311?width=512&height=768"
-        },
-        {
-            name: "Joan",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "84k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%202458513?width=512&height=768"
-        },
-        {
-            name: "Valkyrie",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "17k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208247484?width=512&height=768"
-        },
-        {
-            name: "Athena",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "47k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%20559698?width=512&height=768"
-        },
-        {
-            name: "Diana",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "433k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%206409057?width=512&height=768"
-        },
-        {
-            name: "Freya",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "490k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%205145099?width=512&height=768"
-        },
-        {
-            name: "Sif",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "124k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%202879004?width=512&height=768"
-        },
-        {
-            name: "Brunhilde",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "232k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208339317?width=512&height=768"
-        },
-        {
-            name: "Sigrun",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "231k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%205474954?width=512&height=768"
-        },
-        {
-            name: "Kara",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "112k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%207909849?width=512&height=768"
-        },
-        {
-            name: "Thora",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.8m",
-            likes: "221k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%201311400?width=512&height=768"
-        },
-        {
-            name: "Astrid",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "471k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%201841265?width=512&height=768"
-        },
-        {
-            name: "Ingrid",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "198k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%20594540?width=512&height=768"
-        },
-        {
-            name: "Helga",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "4k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%202761711?width=512&height=768"
-        },
-        {
-            name: "Greta",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "157k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208483928?width=512&height=768"
-        },
-        {
-            name: "Hilda",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.8m",
-            likes: "366k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%205976649?width=512&height=768"
-        },
-        {
-            name: "Olga",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.7m",
-            likes: "68k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%203535950?width=512&height=768"
-        },
-        {
-            name: "Runa",
-            tagline: "Warrior Character",
-            description: "A unique Warrior character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "178k",
-            image: "https://image.pollinations.ai/prompt/anime%20warrior%20character%2C%20armor%2C%20holding%20sword%2C%20epic%20battlefield%20background%2C%20dramatic%20lighting%2C%20detailed%2C%208k%20--seed%208386674?width=512&height=768"
+            name: "Warrior",
+            tagline: "Warrior Anime Character",
+            description: "A pig who loves big tits. Is a servant but has no sense of responsibility. (Source: Honey♥Dip vol. 2, \"Yuusha Sanbiki no Bouken Series.\") Also appea...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/4/432786.jpg"
         },
     ],
     "Assassin": [
         {
-            name: "Akame",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "483k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%206416570?width=512&height=768"
-        },
-        {
-            name: "Killua",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "440k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%205310484?width=512&height=768"
-        },
-        {
-            name: "Kurome",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "398k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207313623?width=512&height=768"
-        },
-        {
-            name: "Chelsea",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.7m",
-            likes: "158k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207610251?width=512&height=768"
-        },
-        {
-            name: "Sheele",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "155k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%203025172?width=512&height=768"
-        },
-        {
-            name: "Mine",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.1m",
-            likes: "57k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202786720?width=512&height=768"
-        },
-        {
-            name: "Yoruichi",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "210k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201103122?width=512&height=768"
-        },
-        {
-            name: "Soifon",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "104k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201199190?width=512&height=768"
-        },
-        {
-            name: "Himiko",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "151k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202224828?width=512&height=768"
-        },
-        {
-            name: "Shiki",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "102k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201720294?width=512&height=768"
-        },
-        {
-            name: "Canaan",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "428k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207983447?width=512&height=768"
-        },
-        {
-            name: "Reiji",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "2.1m",
-            likes: "369k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202166608?width=512&height=768"
-        },
-        {
-            name: "Ein",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "90k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207480982?width=512&height=768"
-        },
-        {
-            name: "Zwei",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "389k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%204219685?width=512&height=768"
-        },
-        {
-            name: "Altair",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "378k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202494967?width=512&height=768"
-        },
-        {
-            name: "Ezio",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "359k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%20606339?width=512&height=768"
-        },
-        {
-            name: "Connor",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "284k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202885180?width=512&height=768"
-        },
-        {
-            name: "Arno",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "287k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201540373?width=512&height=768"
-        },
-        {
-            name: "Jacob",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.6m",
-            likes: "220k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202800438?width=512&height=768"
-        },
-        {
-            name: "Evie",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
+            name: "Aka no Assassin",
+            tagline: "赤のアサシン",
+            description: "Servant of Shirou as part of the Red Faction in the Turifas Holy Grail War of Fate/Apocrypha. (Source: Type-Moon Wikia)",
+            author: "@jikan_api",
             views: "0.2m",
+            likes: "18k",
+            image: "https://cdn.myanimelist.net/images/characters/13/333555.jpg"
+        },
+        {
+            name: "Assassin",
+            tagline: "アサシン",
+            description: "Master: Caster Height: 176 cm Weight: 63 kg  Birthplace: Japan Armament: Odachi Likes: flowers, birds, wind, moon Talents: sword Famous quote: \"My ro...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "18k",
+            image: "https://cdn.myanimelist.net/images/characters/13/268525.jpg"
+        },
+        {
+            name: "Jack the Ripper",
+            tagline: "ジャック・ザ・リッパー",
+            description: "Jack the Ripper, the Legendary Serial Killer (伝説の連続殺人鬼), is a Servant of the Assassin class and one of the main characters in Fate/Apocrypha. She is a...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "13k",
+            image: "https://cdn.myanimelist.net/images/characters/8/333554.jpg"
+        },
+        {
+            name: "Shuten-Douji",
+            tagline: "酒呑童子",
+            description: "Due to her anecdotes and vestiges, she is classified as an \"anti-hero.\" Assassin's True Name is Shuten Douji, one of Japan's Three Great Monsters. I...",
+            author: "@jikan_api",
+            views: "0.1m",
             likes: "14k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202746582?width=512&height=768"
+            image: "https://cdn.myanimelist.net/images/characters/13/349351.jpg"
         },
         {
-            name: "Aveline",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "439k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%204203917?width=512&height=768"
+            name: "Assassin",
+            tagline: "アサシン",
+            description: "Assassin's identity is that of the legendary Persian \"Old Man of the Mountain,\" Hassan-i-Sabah the leader of al-Assasīn. Assassin serves as the Serv...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/14/160563.jpg"
         },
         {
-            name: "Shao",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "109k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%20126333?width=512&height=768"
+            name: "Assassin",
+            tagline: "岡田以蔵",
+            description: "Assassin is the servant of Major Reiter in the Imperial Capital Holy Grail Strange Story of Fate/KOHA-ACE, and Major Reiter in Fate/type Redline. He i...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/10/426349.jpg"
         },
         {
-            name: "Nikolai",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "281k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201598981?width=512&height=768"
+            name: "Hassan of the Cursed Arm",
+            tagline: "真アサシン",
+            description: "Height/Weight: 215cm, 62kg Origin: Middle East, Old Man of the Mountain Region: Middle East Alignment: Lawful-Evil Gender: Male A skeletal assassin. T...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/11/403932.jpg"
         },
         {
-            name: "Arbaaz",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "497k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207895411?width=512&height=768"
+            name: "Shary Shadow Assassin",
+            tagline: "シャーリ・ シャドウアサシン",
+            description: "Shary is Leonis' minion and personal maid.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/5/517565.jpg"
         },
         {
-            name: "Adewale",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "167k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%206113926?width=512&height=768"
+            name: "Assassin",
+            tagline: "アサシン",
+            description: "Summoned by Jester Karture as an Assassin in the fake Holy Grail War in Snowfield. She is a former candidate for the position of Hassan-i Sabbah, the ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/10/580968.jpg"
         },
         {
-            name: "Haytham",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.8m",
-            likes: "279k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201614451?width=512&height=768"
+            name: "Assassin",
+            tagline: "アサシン",
+            description: "Assassin is the Assassin-class Servant able to be summoned by the Protagonist in the Grand Orders of Fate/Grand Order. (Source: Type-Moon Wikia)",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/13/299518.jpg"
         },
         {
-            name: "Shay",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "121k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%206582108?width=512&height=768"
+            name: "Wu Zetian",
+            tagline: "武則天",
+            description: "Pretending to be a little girl whose father was kidnaped, she and a group of Chaldeans penetrate the palace of Dahut. While Dahut is distracted by the...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/11/510686.jpg"
         },
         {
-            name: "Bayek",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "246k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%203061941?width=512&height=768"
+            name: "Assassin",
+            tagline: "暗殺者",
+            description: "A popular Assassin character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"
         },
         {
-            name: "Aya",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "491k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201293743?width=512&height=768"
+            name: "Normal Assassin",
+            tagline: "普通刺客",
+            description: "An assassin Seven runs into in a public men's restroom. (Source: Scissor Seven Wiki)",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/16/502263.jpg"
         },
         {
-            name: "Kassandra",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "141k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207053418?width=512&height=768"
-        },
-        {
-            name: "Alexios",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "418k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207336664?width=512&height=768"
-        },
-        {
-            name: "Eivor",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "354k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%209921575?width=512&height=768"
-        },
-        {
-            name: "Basim",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
+            name: "Assassin",
+            tagline: "殺し屋",
+            description: "A popular Assassin character from anime.",
+            author: "@jikan_api",
             views: "0.1m",
-            likes: "296k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%20468646?width=512&height=768"
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"
         },
         {
-            name: "Hytham",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.7m",
-            likes: "235k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%207890868?width=512&height=768"
-        },
-        {
-            name: "Roshan",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
+            name: "Assassin",
+            tagline: "刺客",
+            description: "A popular Assassin character from anime.",
+            author: "@jikan_api",
             views: "0.1m",
-            likes: "310k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%202358102?width=512&height=768"
-        },
-        {
-            name: "Naoe",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "16k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%201853464?width=512&height=768"
-        },
-        {
-            name: "Yasuke",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "28k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%204784649?width=512&height=768"
-        },
-        {
-            name: "Hanzo",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.1m",
-            likes: "427k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%20269891?width=512&height=768"
-        },
-        {
-            name: "Genji",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "277k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%2046214?width=512&height=768"
-        },
-        {
-            name: "Kiru",
-            tagline: "Assassin Character",
-            description: "A unique Assassin character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "487k",
-            image: "https://image.pollinations.ai/prompt/anime%20assassin%20character%2C%20dark%20hooded%20outfit%2C%20glowing%20eyes%2C%20stealthy%2C%20night%20city%20background%2C%20dynamic%20pose%20--seed%205186990?width=512&height=768"
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/7/515426.jpg"
         },
     ],
     "School": [
         {
-            name: "Nagisa",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "372k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209165250?width=512&height=768"
+            name: "High School Girl Looking for Her Dog",
+            tagline: "犬を探す女子高生",
+            description: "She is a high school student of Sanada West High School. Her real name is unknown. She asked the Prefectural Sanada North High School student council ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/3/158591.jpg"
         },
         {
-            name: "Kyou",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "98k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%202144058?width=512&height=768"
+            name: "High School Girl Spirit",
+            tagline: "女子高生の化け物",
+            description: "Repeatedly says morning to students. She was sentient to the point of being able to speak other words such as \"Can you see me?\". After determining t...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/7/460710.jpg"
         },
         {
-            name: "Tomoyo",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "359k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203103325?width=512&height=768"
+            name: "High School Girl",
+            tagline: "女子高生",
+            description: "She is a high school girl who boards the same train as Hidenori every morning. Her real name is unknown. Hidenori noticed a single strand of hair grow...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/263065.jpg"
         },
         {
-            name: "Kotomi",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "73k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209034267?width=512&height=768"
+            name: "Schoolboy A",
+            tagline: "男子生徒Ａ",
+            description: "Appears in episode 2.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"
         },
         {
-            name: "Fuko",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "314k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209453409?width=512&height=768"
+            name: "Michihisa Kanou",
+            tagline: "加納 ミチヒサ",
+            description: "A Teacher who is rumored to appear in the Classroom late at night since 10 years ago.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/6/531019.jpg"
         },
         {
-            name: "Ryou",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "2.1m",
-            likes: "457k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%205623732?width=512&height=768"
+            name: "Junior High School Student A",
+            tagline: "中学生A",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/13/305748.jpg"
         },
         {
-            name: "Yukino",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.6m",
-            likes: "163k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%208472610?width=512&height=768"
+            name: "School Principal",
+            tagline: "School Anime Character",
+            description: "Father of Narisu. Appears in episode 14 (Narisu Scramble).",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/10/189234.jpg"
         },
         {
-            name: "Yui",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "78k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203167481?width=512&height=768"
+            name: "School Teacher",
+            tagline: "School Anime Character",
+            description: "Heroine of the fifth and sixth chapters. She was aware that her boyfriend is cheating on her. One day, when he invited her to his house again, she cam...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/13/325953.jpg"
         },
         {
-            name: "Iroha",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "240k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209582832?width=512&height=768"
+            name: "School Principal",
+            tagline: "School Anime Character",
+            description: "The Principal at Seioh High School.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/3/80255.jpg"
         },
         {
-            name: "Komachi",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "256k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%202679413?width=512&height=768"
+            name: "High School Student ",
+            tagline: "高校生",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/8/453545.jpg"
         },
         {
-            name: "Taiga",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "416k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203419803?width=512&height=768"
+            name: "Saitama School Delinquent",
+            tagline: "School Anime Character",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/10/449240.jpg"
         },
         {
-            name: "Minori",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "34k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%205963889?width=512&height=768"
+            name: "Schoolgirl",
+            tagline: "School Anime Character",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/14/511699.jpg"
         },
         {
-            name: "Ami",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.7m",
-            likes: "345k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203389661?width=512&height=768"
+            name: "School Nurse",
+            tagline: "医務室の先生",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/2/619698.jpg"
         },
         {
-            name: "Haruhi",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "400k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%201729954?width=512&height=768"
+            name: "Ayashigeru High School Captain",
+            tagline: "綾茂高校キャプテン",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/11/619521.jpg"
         },
         {
-            name: "Mikuru",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "243k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%202186616?width=512&height=768"
-        },
-        {
-            name: "Yuki",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "471k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%204342240?width=512&height=768"
-        },
-        {
-            name: "Kyon",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "105k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%205686423?width=512&height=768"
-        },
-        {
-            name: "Itsuki",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "451k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%206397237?width=512&height=768"
-        },
-        {
-            name: "Mio",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.7m",
-            likes: "303k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%208855671?width=512&height=768"
-        },
-        {
-            name: "Ritsu",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "94k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%207710051?width=512&height=768"
-        },
-        {
-            name: "Tsumugi",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "483k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203315695?width=512&height=768"
-        },
-        {
-            name: "Azusa",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "325k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209678213?width=512&height=768"
-        },
-        {
-            name: "Ui",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.7m",
-            likes: "17k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%204425606?width=512&height=768"
-        },
-        {
-            name: "Nodoka",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "65k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%205125945?width=512&height=768"
-        },
-        {
-            name: "Sawako",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "216k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%202772758?width=512&height=768"
-        },
-        {
-            name: "Chitanda",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "164k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%204878404?width=512&height=768"
-        },
-        {
-            name: "Mayaka",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "328k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%208625043?width=512&height=768"
-        },
-        {
-            name: "Satoshi",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "417k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203540165?width=512&height=768"
-        },
-        {
-            name: "Houtarou",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "20k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%207203851?width=512&height=768"
-        },
-        {
-            name: "Kumiko",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "376k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%20280044?width=512&height=768"
-        },
-        {
-            name: "Reina",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "307k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%204025923?width=512&height=768"
-        },
-        {
-            name: "Hazuki",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "163k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%201866278?width=512&height=768"
-        },
-        {
-            name: "Sapphire",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "374k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209774791?width=512&height=768"
-        },
-        {
-            name: "Asuka",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "412k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%204704887?width=512&height=768"
-        },
-        {
-            name: "Kaori",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "334k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%206299552?width=512&height=768"
-        },
-        {
-            name: "Haruka",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "466k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%209663151?width=512&height=768"
-        },
-        {
-            name: "Michiru",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "310k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%202485173?width=512&height=768"
-        },
-        {
-            name: "Mari",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.2m",
-            likes: "121k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%204650791?width=512&height=768"
-        },
-        {
-            name: "Eli",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "309k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%203103706?width=512&height=768"
-        },
-        {
-            name: "Nozomi",
-            tagline: "School Character",
-            description: "A unique School character generated with AI.",
-            author: "@ai_gen",
-            views: "2.0m",
-            likes: "322k",
-            image: "https://image.pollinations.ai/prompt/anime%20school%20girl%2C%20japanese%20school%20uniform%2C%20classroom%20background%2C%20sunlight%2C%20slice%20of%20life%2C%20high%20quality%20--seed%208414174?width=512&height=768"
+            name: "School Nurse",
+            tagline: "保健の先生",
+            description: "A popular School character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/2/618012.jpg"
         },
     ],
     "Fantasy": [
         {
-            name: "Megumin",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "352k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%205364396?width=512&height=768"
+            name: "Santa-san",
+            tagline: "Fantasy Anime Character",
+            description: "Santa appears at the first episode/chapter of Hayate no Gotoku and tells Hayate to work hard for his own food.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/12/35715.jpg"
         },
         {
-            name: "Aqua",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "408k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%209457685?width=512&height=768"
+            name: "Fanta",
+            tagline: "Fantasy Anime Character",
+            description: "Fanta is a fairy from magical kingdom of Avalon. Her dream is to live among humans on the Earth. When Ryang became cursed with 108 evil affinities, sh...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/2/9632.jpg"
         },
         {
-            name: "Darkness",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "290k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206309704?width=512&height=768"
+            name: "Kanta's Grandmother",
+            tagline: "カンタのおばあちゃん",
+            description: "Kanta's grandmother, whose real name is never mentioned, was caretaker of the house the Kusakabe family lives in. She later becomes good friends to th...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/5/63839.jpg"
         },
         {
-            name: "Yunyun",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "279k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%202349884?width=512&height=768"
+            name: "Fanta Otogami",
+            tagline: "音上 ファンタ",
+            description: "The fourth oldest sibling. A womanizer/playboy. No voice actors have been added to this character. Help improve our database by searching for a voice ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/15/474578.jpg"
         },
         {
-            name: "Wiz",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "115k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206472884?width=512&height=768"
+            name: "Santa-san",
+            tagline: "サンタさん",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/3/505316.jpg"
         },
         {
-            name: "Emilia",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "241k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%202832846?width=512&height=768"
+            name: "Guita Hebby Fantasia",
+            tagline: "ギータ・ヘビィ・ファンタジア",
+            description: "Guita Hebby Fantasia is a Janitor and a member of Team Child. Due to being a child, Guita is loud and touchy. She does not understand normal social cu...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "17k",
+            image: "https://cdn.myanimelist.net/images/characters/7/607531.jpg"
         },
         {
-            name: "Rem",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "249k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%201167943?width=512&height=768"
-        },
-        {
-            name: "Ram",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "386k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%209610222?width=512&height=768"
-        },
-        {
-            name: "Beatrice",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "230k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%201319019?width=512&height=768"
-        },
-        {
-            name: "Echidna",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "230k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206015876?width=512&height=768"
-        },
-        {
-            name: "Frieren",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "415k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%201318191?width=512&height=768"
-        },
-        {
-            name: "Fern",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "196k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207488668?width=512&height=768"
-        },
-        {
-            name: "Stark",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "333k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%203228394?width=512&height=768"
-        },
-        {
-            name: "Himmel",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "67k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%20195169?width=512&height=768"
-        },
-        {
-            name: "Heiter",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "253k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207913870?width=512&height=768"
-        },
-        {
-            name: "Eisen",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "178k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207619511?width=512&height=768"
-        },
-        {
-            name: "Roxy",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "226k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%202458084?width=512&height=768"
-        },
-        {
-            name: "Sylphiette",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.1m",
-            likes: "286k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207685495?width=512&height=768"
-        },
-        {
-            name: "Eris",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "164k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206866991?width=512&height=768"
-        },
-        {
-            name: "Ghislaine",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
-            likes: "32k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%209646329?width=512&height=768"
-        },
-        {
-            name: "Elinalise",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.4m",
-            likes: "214k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%201387331?width=512&height=768"
-        },
-        {
-            name: "Rudeus",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "244k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%203585268?width=512&height=768"
-        },
-        {
-            name: "Paul",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "277k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%209316738?width=512&height=768"
-        },
-        {
-            name: "Zenith",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "194k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%203000806?width=512&height=768"
-        },
-        {
-            name: "Lilia",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "103k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%203989412?width=512&height=768"
-        },
-        {
-            name: "Aisha",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "480k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206929813?width=512&height=768"
-        },
-        {
-            name: "Norn",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.2m",
-            likes: "427k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%205256707?width=512&height=768"
-        },
-        {
-            name: "Ruijerd",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.7m",
-            likes: "472k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207356198?width=512&height=768"
-        },
-        {
-            name: "Orsted",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.5m",
-            likes: "41k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%202018062?width=512&height=768"
-        },
-        {
-            name: "Kishirika",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.4m",
-            likes: "171k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207195780?width=512&height=768"
-        },
-        {
-            name: "Badigadi",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.3m",
-            likes: "264k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%202619351?width=512&height=768"
-        },
-        {
-            name: "Perugius",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "468k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206647179?width=512&height=768"
-        },
-        {
-            name: "Almanfi",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.3m",
-            likes: "274k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207135352?width=512&height=768"
-        },
-        {
-            name: "Zanoba",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
+            name: "Fantasia Yusano",
+            tagline: "遊佐野 ファンタジア",
+            description: "Yusano is a blonde busty who has sky blue eyes and rosy cheeks, wears a pink motif outfit sporting a nurses outfit with a sports jacket over it. She a...",
+            author: "@jikan_api",
             views: "0.1m",
-            likes: "43k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%204780551?width=512&height=768"
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/16/273591.jpg"
         },
         {
-            name: "Cliff",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.8m",
-            likes: "213k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%206644030?width=512&height=768"
+            name: "Nakami's Mother",
+            tagline: "Fantasy Anime Character",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/13/580269.jpg"
         },
         {
-            name: "Ariel",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.9m",
-            likes: "48k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%201890109?width=512&height=768"
+            name: "Louis",
+            tagline: "Fantasy Anime Character",
+            description: "Prince Louis is the third son of the king of the kingdom of Willy. No voice actors have been added to this character. Help improve our database by sea...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/15/586342.jpg"
         },
         {
-            name: "Luke",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.5m",
-            likes: "311k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%20372263?width=512&height=768"
+            name: "Kanta's Father",
+            tagline: "Fantasy Anime Character",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/3/575196.jpg"
         },
         {
-            name: "Pile",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "0.9m",
-            likes: "76k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%205860382?width=512&height=768"
+            name: "Ganta's Grandfather",
+            tagline: "頑太の祖父",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"
         },
         {
-            name: "Gyes",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "1.0m",
+            name: "Kanta's Father",
+            tagline: "カンタの父",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/11/533122.jpg"
+        },
+        {
+            name: "Kanta's Mother",
+            tagline: "カンタの母",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/6/533123.jpg"
+        },
+        {
+            name: "Fangas",
+            tagline: "ファンガス",
+            description: "A popular Fantasy character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/7/474645.jpg"
+        },
+        {
+            name: "Fanta",
+            tagline: "ファンタ",
+            description: "A cute, transforming puppy whom Milk-chan rescues. No voice actors have been added to this character. Help improve our database by searching for a voi...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/11/259453.jpg"
+        },
+    ],
+    "Naruto": [
+        {
+            name: "Naruto Uzumaki",
+            tagline: "うずまき ナルト",
+            description: "Age: 12-13 (Naruto part I), 15-17 (part II), 19 (The Last: Naruto the Movie), 27 (Naruto epilogue), 32 (Boruto: Naruto the Movie) Birthday: October 10...",
+            author: "@jikan_api",
+            views: "86.9m",
+            likes: "8690k",
+            image: "https://cdn.myanimelist.net/images/characters/2/284121.jpg"
+        },
+        {
+            name: "Naruko Anjou",
+            tagline: "安城 鳴子",
+            description: "Height: 165 cm (5'5\") Weight: 53 kg  (116 lbs) Starsign: Capricorn (stated in the anime by Jinta, her birthday was not revealed though) Naruko is a c...",
+            author: "@jikan_api",
+            views: "1.4m",
+            likes: "136k",
+            image: "https://cdn.myanimelist.net/images/characters/10/121622.jpg"
+        },
+        {
+            name: "Ryuuichi Naruhodou",
+            tagline: "成歩堂 龍一",
+            description: "\"Ace Attorney\" and main character of the first three games, Phoenix has wanted to be a defense lawyer since he was a kid, and first appears as the n...",
+            author: "@jikan_api",
+            views: "0.7m",
+            likes: "65k",
+            image: "https://cdn.myanimelist.net/images/characters/11/303009.jpg"
+        },
+        {
+            name: "Ayame Sarutobi",
+            tagline: "猿飛 あやめ",
+            description: "Birthday: June 2 Height: 169 cm Weight: 52 kg Sarutobi Ayame is a ninja from the Oniwabanshuu by training, but is currently working as an assassin. Sh...",
+            author: "@jikan_api",
+            views: "0.4m",
+            likes: "35k",
+            image: "https://cdn.myanimelist.net/images/characters/5/113709.jpg"
+        },
+        {
+            name: "Asuma Sarutobi",
+            tagline: "猿飛アスマ",
+            description: "Birthdate: October 18 Horoscope: Libra Age: 27-28 (Part I), 31 (Part II,  Height: 190.8 cm (6'25'') Weight: 81.6 kg Blood type: O Clan: Sarutobi clan ...",
+            author: "@jikan_api",
+            views: "0.3m",
+            likes: "33k",
+            image: "https://cdn.myanimelist.net/images/characters/13/82538.jpg"
+        },
+        {
+            name: "Shoukichi Naruko",
+            tagline: "鳴子 章吉",
+            description: "Birthday: August 28 Blood type: B Naruko is a mouthy redhead from Osaka. He met Onoda in Akihabara while looking for Gundam plastic models for his you...",
+            author: "@jikan_api",
+            views: "0.3m",
+            likes: "28k",
+            image: "https://cdn.myanimelist.net/images/characters/4/266433.jpg"
+        },
+        {
+            name: "Konohamaru Sarutobi",
+            tagline: "猿飛 木ノ葉丸",
+            description: "Age: 8-9 in Part I; 11 in Part II; 27 in Boruto Birthday: December 30 Blood type: B Height: Part I: 128.8 cm–130.6 cm, Part II: 141.1 cm, Gaiden: 177....",
+            author: "@jikan_api",
+            views: "0.3m",
+            likes: "25k",
+            image: "https://cdn.myanimelist.net/images/characters/7/109419.jpg"
+        },
+        {
+            name: "Haruto Kirishima",
+            tagline: "桐島 青大",
+            description: "Birthday: October 30 Birthplace: Hiroshima  Height: 175 cm Weight: 64 kg Blood Type: O The male protagonist of the series. He has a reserved personali...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "15k",
+            image: "https://cdn.myanimelist.net/images/characters/3/217739.jpg"
+        },
+        {
+            name: "Hiruzen Sarutobi",
+            tagline: "猿飛ヒルゼン",
+            description: "The Third Hokage is a former student of the First Hokage and Second Hokage. Because of his surname, Sarutobi, the First and Second called him \"Saru.\...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "10k",
+            image: "https://cdn.myanimelist.net/images/characters/2/68520.jpg"
+        },
+        {
+            name: "Naruko Yokoshima",
+            tagline: "横島 ナルコ",
+            description: "Naruko has neck-length reddish brown hair, dark brown eyes, she is roughly equal to Takatoshi Tsuda's height or slightly taller in terms of height and...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "10k",
+            image: "https://cdn.myanimelist.net/images/characters/3/105514.jpg"
+        },
+        {
+            name: "Naruo Taneda",
+            tagline: "種田 成男",
+            description: "Taneda is Meiko's boyfriend and lives in an apartment with her in Tokyo. They support themselves through their jobs (Taneda is an illustrator in a pre...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "11k",
+            image: "https://cdn.myanimelist.net/images/characters/5/288302.jpg"
+        },
+        {
+            name: "Sasuke Sarutobi",
+            tagline: "猿飛 佐助",
+            description: "A ninja in the service of Takeda clan (or to be exact the Sanada clan), counted as one of the Sanada Ten Braves. He is sneaky, cunning and laid back b...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "8k",
+            image: "https://cdn.myanimelist.net/images/characters/12/150267.jpg"
+        },
+        {
+            name: "Haruto Tokishima",
+            tagline: "時縞 ハルト",
+            description: "Birthday: October 15 Zodiac: Libra Gender: Male Height: 173 cm Blood type: O Haruto is the main protagonist of Valvrave the Liberator. He is a high sc...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "8k",
+            image: "https://cdn.myanimelist.net/images/characters/3/210335.jpg"
+        },
+        {
+            name: "Shinobu Sarutobi",
+            tagline: "猿飛 忍",
+            description: "A Shinobi journalist and a member of the Seven Prodigies. Considered to be the world's best journalist, she has great ability for information gatherin...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "7k",
+            image: "https://cdn.myanimelist.net/images/characters/7/390246.jpg"
+        },
+        {
+            name: "Hideyoshi Sarutobi",
+            tagline: "猿飛 秀吉",
+            description: "Hideyoshi Sarutobi, often referred to as Saru, is a friend of Nagasumi who is often portrayed as a perverted monkey (a pun on his name; \"saru\" meani...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/15/273771.jpg"
+        },
+    ],
+    "One Piece": [
+        {
+            name: "Bercouli Synthesis One",
+            tagline: "ベルクーリ・シンセシス・ワン",
+            description: "One of the founders of Rulid Village, as well as the Knight Leader of the Integrity Knights, and the oldest Integrity Knight in existence. Bercouli's ...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "20k",
+            image: "https://cdn.myanimelist.net/images/characters/6/245565.jpg"
+        },
+        {
+            name: "All For One",
+            tagline: "オール・フォー・ワン",
+            description: "All For One is the true leader and benefactor of the League of Villains, the primary antagonist of the Hideout Raid Arc and the central antagonist of ...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "21k",
+            image: "https://cdn.myanimelist.net/images/characters/4/370136.jpg"
+        },
+        {
+            name: "Proxy One",
+            tagline: "One Piece Anime Character",
+            description: "(Source: Wikipedia)",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/15/52260.jpg"
+        },
+        {
+            name: "One",
+            tagline: "ワン",
+            description: "A fellow Intoner and Zero's younger sister. She is intelligent, serious, and has a strong sense of justice—Zero's polar opposite. It is out of her int...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/13/462028.jpg"
+        },
+        {
+            name: "One",
+            tagline: "ワン",
+            description: "He is the \"brother\" of One and the creator of the Cult of Watchers. He and One are the ones depicted in the symbol of the cult, the Three-Eyed Twins...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/5/325105.jpg"
+        },
+        {
+            name: "Page One",
+            tagline: "ページワン",
+            description: "Page One is a Headliner of the Beasts Pirates and a member of the Flying Six.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/11/476813.jpg"
+        },
+        {
+            name: "Brother One",
+            tagline: "One Piece Anime Character",
+            description: "The leader of the Empty Seven, who believes that obtaining both headbands will lead to immortality and godhood. He has a golden robotic left arm, whic...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/12/42863.jpg"
+        },
+        {
+            name: "One",
+            tagline: "원",
+            description: "Zero was a mysterious character in Shotgun Boy. He carried notable attributes in relation to Sweet Home monsters and evolved humans, such as a broken ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/14/490728.jpg"
+        },
+        {
+            name: "Zero One",
+            tagline: "ゼロワン",
+            description: "A popular One Piece character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/2/542068.jpg"
+        },
+        {
+            name: "The One",
+            tagline: "ザ・ワン",
+            description: "A popular One Piece character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/8/301310.jpg"
+        },
+        {
+            name: "One",
+            tagline: "One Piece Anime Character",
+            description: "One is the main protagonists of Blood Bank. He's introduced as a banker in the Midlands' Blood Bank, ruled by Shell Overlord. No voice actors have bee...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/5/473450.jpg"
+        },
+        {
+            name: "Toshitsugu Kudou",
+            tagline: "駆藤 敏次",
+            description: "He is the second user of the One for All Quirk.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/12/542577.jpg"
+        },
+        {
+            name: "One",
+            tagline: "おね",
+            description: "A popular One Piece character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/10/507205.jpg"
+        },
+        {
+            name: "One",
+            tagline: "One Piece Anime Character",
+            description: "A popular One Piece character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/10/452310.jpg"
+        },
+        {
+            name: "One",
+            tagline: "ワン",
+            description: "The \"immortal\" agent that work of the \"4S\", a organization specialized and selling antiques stealied in the black market. Work with Rin Nyan and F...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/9/542909.jpg"
+        },
+    ],
+    "Attack on Titan": [
+        {
+            name: "Titan",
+            tagline: "巨人",
+            description: "G. Mahler's \"Symphony No. 1 in D major\". A Musicart with the score of Titan. (Source: Official Site, translated)",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "17k",
+            image: "https://cdn.myanimelist.net/images/characters/10/453362.jpg"
+        },
+        {
+            name: "Beast Titan",
+            tagline: "獣の巨人",
+            description: "The Beast Titan is a mysterious Titan capable of speech. It is first seen during the invasion of Wall Rose arc. (Source: Attack on Titan Wiki)",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "8k",
+            image: "https://cdn.myanimelist.net/images/characters/5/328280.jpg"
+        },
+        {
+            name: "Cart Titan",
+            tagline: "車力の巨人",
+            description: "A popular Attack on Titan character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "3k",
+            image: "https://cdn.myanimelist.net/images/characters/5/385131.jpg"
+        },
+        {
+            name: "Titania",
+            tagline: "ティターニア",
+            description: "Titania is the queen of the fairies and wife to Oberon. She is an acquaintance of Elias Ainsworth and appears to know something about his origin. She ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/4/338156.jpg"
+        },
+        {
+            name: "Titaniva Mu Koshigaya",
+            tagline: "Attack on Titan Anime Character",
+            description: "The chief heroine of Plastic Little, Titaniva Mu Koshigaya (or Tita to her friends) is the captain of the Cha-Cha Maru, a petshop hunter ship she inhe...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/3/107714.jpg"
+        },
+        {
+            name: "Titan Great Sword Tenjinsoseiken",
+            tagline: "グレート・ソード天神創生剣のタイタン",
+            description: "One of four Pallasite Kings, the user of the Great Sword Tenjinsoseiken. He is calm and soft spoken, and apparently the most loyal of the four kings.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/13/225151.jpg"
+        },
+        {
+            name: "Titania",
+            tagline: "Attack on Titan Anime Character",
+            description: "Titania is an automaton. Her regular form is a small four-legged creature with a tail. She is capable of taking a humanoid form as well. No voice acto...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/15/387301.jpg"
+        },
+        {
+            name: "Noa Titan",
+            tagline: "ノア・ティターン",
+            description: "No voice actors have been added to this character. Help improve our database by searching for a voice actor, and adding this character to their roles ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/5/421785.jpg"
+        },
+        {
+            name: "Titania",
+            tagline: "ティターニア",
+            description: "A popular Attack on Titan character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/12/362673.jpg"
+        },
+        {
+            name: "Titan",
+            tagline: "タイタン",
+            description: "The 6th assassin of the Seven Stars.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/11/276541.jpg"
+        },
+        {
+            name: "Titana",
+            tagline: "チターナ",
+            description: "Birthday: September 23 Chitana is Nicolas' Jewelpet partner. He is a Chipmunk  who symbolizes balance. He wears a blue cap and a necklace shaped like ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/91199.jpg"
+        },
+        {
+            name: "Titan",
+            tagline: "Attack on Titan Anime Character",
+            description: "A popular Attack on Titan character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/4/605380.jpg"
+        },
+        {
+            name: "Attack",
+            tagline: "Attack on Titan Anime Character",
+            description: "A popular Attack on Titan character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/15/597538.jpg"
+        },
+        {
+            name: "Titan",
+            tagline: "タイタン",
+            description: "A popular Attack on Titan character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/4/585489.jpg"
+        },
+        {
+            name: "Titan",
+            tagline: "Attack on Titan Anime Character",
+            description: "A popular Attack on Titan character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/10/586768.jpg"
+        },
+    ],
+    "Demon Slayer": [
+        {
+            name: "Kneesocks Demon",
+            tagline: "ニーソックス",
+            description: "The younger of the Demon Sisters. She is completely inflexible and always acts according to the books. She is actually a little bit dorky and blushes ...",
+            author: "@jikan_api",
+            views: "0.3m",
+            likes: "32k",
+            image: "https://cdn.myanimelist.net/images/characters/4/159167.jpg"
+        },
+        {
+            name: "Scanty Demon",
+            tagline: "スキャンティ",
+            description: "The older of the Demon Sisters. She places rules and etiquette above everything else. She is an extremely polite high-class lady, but she actually enj...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "16k",
+            image: "https://cdn.myanimelist.net/images/characters/4/159147.jpg"
+        },
+        {
+            name: "Demon Lord Tasogare",
+            tagline: "魔王タソガレ",
+            description: "The final boss of the Demon King Castle, and the perpetrator behind the Princess's kidnapping. He proclaims that he has obtained all the power necessa...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "12k",
+            image: "https://cdn.myanimelist.net/images/characters/12/409579.jpg"
+        },
+        {
+            name: "Demon Cleric",
+            tagline: "あくましゅうどうし",
+            description: "He looks like a gentle young man but is much older than he appears, as evidenced by the photo of him and a young Demon King Tasogare in which he looks...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "12k",
+            image: "https://cdn.myanimelist.net/images/characters/9/409581.jpg"
+        },
+        {
+            name: "Mother Spider Demon",
+            tagline: "蜘蛛の鬼 母",
+            description: "The Mother Spider Demon was a member of the Spider Family. The Mother Spider Demon is a short woman with long white hair, red markings on her face, an...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "9k",
+            image: "https://cdn.myanimelist.net/images/characters/4/385242.jpg"
+        },
+        {
+            name: "Little Demon",
+            tagline: "小さな 鬼",
+            description: "Called \"Little Demon\" by Soul Eater, he is a strange demonic imp that appeared before Soul inside his heart after his first encounter with Ragnarök....",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/10/30053.jpg"
+        },
+        {
+            name: "Demon Gowther",
+            tagline: "ゴウセル",
+            description: "A popular Demon Slayer character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/11/398995.jpg"
+        },
+        {
+            name: "Older Sister Spider Demon",
+            tagline: "蜘蛛の鬼 姉",
+            description: "The Older Sister Spider Demon was a member of the Spider Family. Her physical features are similar to that of her \"Younger Brother\" Rui, completely ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/11/385245.jpg"
+        },
+        {
+            name: "Hand Demon",
+            tagline: "手鬼",
+            description: "The Hand Demon was a notorious Demon that killed thirteen of Urokodaki Sakonji's apprentices, including Sabito and Makomo. The Hand Demon is a large, ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/7/385331.jpg"
+        },
+        {
+            name: "Demon",
+            tagline: "魔神",
+            description: "He is a supernatural entity who is said to appear when great heroes die. The Demon is the source of many major characters' abilities and afflictions, ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/4/469028.jpg"
+        },
+        {
+            name: "Demon Lord Asumodai",
+            tagline: "魔王アスモダイ",
+            description: "A popular Demon Slayer character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/12/233757.jpg"
+        },
+        {
+            name: "Tongue Demon",
+            tagline: "舌鬼",
+            description: "Tongue Demon is a demon who lives in the Drum House.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/4/388817.jpg"
+        },
+        {
+            name: "Temple Demon",
+            tagline: "お堂の鬼",
+            description: "The Temple Demon is the first Demon encountered by Tanjiro Kamado . The Demon had already been attacking travelers who take shelter at a small temple ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/7/385330.jpg"
+        },
+        {
+            name: "Demon General Zannin",
+            tagline: "魔将軍ザンニン",
+            description: "Zannin was one of the main villains from the Devilman anime series. He was the second-in-command of Zennon and had many demons serving under him. He w...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/14/332061.jpg"
+        },
+        {
+            name: "Father Spider Demon",
+            tagline: "蜘蛛の鬼 父",
+            description: "The Father Spider Demon was a member of the Spider Family. The Father Spider Demon is the physically largest of his \"Family\", his skins is dark brow...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/13/385243.jpg"
+        },
+    ],
+    "Dragon Ball": [
+        {
+            name: "Shiryuu Dragon",
+            tagline: "紫龍",
+            description: "Age: 14 (Saint Seiya) / 39 (Saint Seiya Omega) Class: Saints Birthday: October 4 Rank: Bronze Saints (Saint Seiya) / Gold Saints (Saint Seiya Omega) C...",
+            author: "@jikan_api",
+            views: "0.6m",
+            likes: "63k",
+            image: "https://cdn.myanimelist.net/images/characters/9/73690.jpg"
+        },
+        {
+            name: "Dragon Monkey D.",
+            tagline: "モンキー・D・ドラゴン",
+            description: "(Source: Wikipedia)",
+            author: "@jikan_api",
+            views: "0.3m",
+            likes: "33k",
+            image: "https://cdn.myanimelist.net/images/characters/6/193567.jpg"
+        },
+        {
+            name: "Blue Dragon",
+            tagline: "Dragon Ball Anime Character",
+            description: "Shu is the owner of the shadow Blue Dragon, which often uses magic sword attacks. In the anime, Blue Dragon at first doesn't cooperate with Shu until ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/14/360017.jpg"
+        },
+        {
+            name: "Herbivore Dragon",
+            tagline: "草食ドラゴン",
+            description: "A 5000-year-old herbivorous dragon who wants to live peacefully, but people around have got the idea that he is a powerful evil dragon.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/16/483568.jpg"
+        },
+        {
+            name: "Water Dragon God",
+            tagline: "水神",
+            description: "The water god is feared by the villagers. He lives in the lake inside the woods and normally ignores the humans' pleas and rituals, but becomes intrig...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/2/449688.jpg"
+        },
+        {
+            name: "Drumbunker Dragon",
+            tagline: "ドラムバンカー・ドラゴン",
+            description: "Known simply as \"Drum\" by Gao, Drum is a stubborn Dragon from Dragon World, who is the son of Fang Slade Terrestrial XIII, the chief of the Drum Cla...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/16/231097.jpg"
+        },
+        {
+            name: "Ryuuhou Dragon",
+            tagline: "龍峰",
+            description: "Dragon Ryuuho is the son of Dragon Shiryu. Being the son of a legendary Saint, Ryuuho struggles to live up to his father's name. For the time being, h...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/3/166565.jpg"
+        },
+        {
+            name: "Dragon Taichou",
+            tagline: "Dragon Ball Anime Character",
+            description: "One of leaders from Joi. Spoof of Jackie Chan.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/7/59849.jpg"
+        },
+        {
+            name: "Haiya Dragon",
+            tagline: "ハイヤードラゴン",
+            description: "A popular Dragon Ball character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/12/72754.jpg"
+        },
+        {
+            name: "Abyssal Black Flame Dragon",
+            tagline: "Dragon Ball Anime Character",
+            description: "The Abyssal Black Flame Dragon is a constellation and the leader of the &lt;Black Cloud&gt; group. He offered to sponsor Kim Dokja in the first Sponso...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/6/457717.jpg"
+        },
+        {
+            name: "Kim Dragon",
+            tagline: "Dragon Ball Anime Character",
+            description: "A popular Dragon Ball character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/2/384519.jpg"
+        },
+        {
+            name: "Yukano Dragon",
+            tagline: "ドラゴン・ユカノ",
+            description: "A ninja and granddaughter of Gendousou Dragon. (Source: Ninja Slayer Wikia)",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/8/294354.jpg"
+        },
+        {
+            name: "Blue Dragon Mama",
+            tagline: "ブルードラゴンのママ",
+            description: "Mama of the gay bar \"Blue Dragon.\"",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/7/156685.jpg"
+        },
+        {
+            name: "Dragon God",
+            tagline: "Dragon Ball Anime Character",
+            description: "A popular Dragon Ball character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/3/23900.jpg"
+        },
+        {
+            name: "Ground Dragon",
+            tagline: "グランド ドラゴン",
+            description: "Race: Artificial Mutant Gender: Male Abilities: Weapon's; Mole Hands Level: Tiger Affiliation: House of Evolution Debut: Chapter 8/Episode 2 Ground Dr...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/2/293984.jpg"
+        },
+    ],
+    "Jujutsu Kaisen": [
+        {
+            name: "Jusetsu Ryuu",
+            tagline: "柳 寿雪",
+            description: "At sixteen years of age, she is the latest successor to the title of \"Raven Consort.\" She lives at the Ye Ming Palace deep in the inner palace; and ...",
+            author: "@jikan_api",
+            views: "0.2m",
+            likes: "19k",
+            image: "https://cdn.myanimelist.net/images/characters/2/480376.jpg"
+        },
+        {
+            name: "Kaiser de Emperana Beelzebub IV",
+            tagline: "カイゼル・デ・エンペラーナ・ベルゼバブ4世",
+            description: "The son of the Devil King. He is very attached to Oga, clinging with a vice-like grip to Oga's back. When he is agitated or sees blood, he will sponta...",
+            author: "@jikan_api",
+            views: "1.2m",
+            likes: "118k",
+            image: "https://cdn.myanimelist.net/images/characters/8/138775.jpg"
+        },
+        {
+            name: "Kaien Cross",
+            tagline: "黒主 灰閻",
+            description: "Yuuki's adoptive parent, who also took Zero into his home several years ago. Headmaster Cross dreams of peace between humans and vampires, and establi...",
+            author: "@jikan_api",
+            views: "0.3m",
+            likes: "25k",
+            image: "https://cdn.myanimelist.net/images/characters/6/118110.jpg"
+        },
+        {
+            name: "Michael Kaiser",
+            tagline: "ミヒャエル・カイザー",
+            description: "Age: 19 Birthday: December 25 Height: 186 cm (6' 1\") Blood Type: A Weapon: Kaiser Impact, Off-the-Ball Movements, Spatial Awareness, Flow State Micha...",
+            author: "@jikan_api",
+            views: "1.1m",
+            likes: "107k",
+            image: "https://cdn.myanimelist.net/images/characters/5/472363.jpg"
+        },
+        {
+            name: "Kaien Shiba",
+            tagline: "志波 海燕",
+            description: "Birthday: October 27 Height: 183 cm (6'0\") Weight: 68 kg (150 lbs) Kaien Shiba was the lieutenant of the 13th Division, under Juushiro Ukitake, up un...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "7k",
+            image: "https://cdn.myanimelist.net/images/characters/11/33246.jpg"
+        },
+        {
+            name: "Kasen Ibaraki",
+            tagline: "茨木 華扇",
+            description: "Kasen Ibaraki, who also goes by the pseudonym Ibarakasen or just Kasen (spelled with different characters compared to her given name) is the main prot...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "7k",
+            image: "https://cdn.myanimelist.net/images/characters/15/449792.jpg"
+        },
+        {
+            name: "Kaisei Ebisugawa",
+            tagline: "夷川 海星",
+            description: "Ebisugawa Kaisei is the daughter of Ebisugawa Souun. She was Yasaburou's fiancé until Shimogamo Souichirou's death. She never let Yasaburou see her in...",
+            author: "@jikan_api",
+            views: "0.1m",
             likes: "6k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207773504?width=512&height=768"
+            image: "https://cdn.myanimelist.net/images/characters/12/328811.jpg"
         },
         {
-            name: "Rinia",
-            tagline: "Fantasy Character",
-            description: "A unique Fantasy character generated with AI.",
-            author: "@ai_gen",
-            views: "2.1m",
-            likes: "31k",
-            image: "https://image.pollinations.ai/prompt/anime%20fantasy%20mage%2C%20holding%20magic%20staff%2C%20glowing%20runes%2C%20ethereal%20atmosphere%2C%20masterpiece%2C%20detailed%20--seed%207312885?width=512&height=768"
+            name: "Karen Kurutsu",
+            tagline: "枢都 夏蓮",
+            description: "A popular Jujutsu Kaisen character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "3k",
+            image: "https://cdn.myanimelist.net/images/characters/4/346012.jpg"
+        },
+        {
+            name: "Kasen Tosu",
+            tagline: "鳥栖 歌仙",
+            description: "Kasen Tosu is Tetsuo Tosu's wife in the My Home Hero manga.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/5/489394.jpg"
+        },
+        {
+            name: "Kaiser de Emperana Beelzebub III",
+            tagline: "カイゼル・デ・エンペラーナ・ベルゼバブ3世",
+            description: "The Great Demon King, or Beelzebub III, is a very random and forgetful king. He wants to Destroy humanity and sends his youngest son Beelzebub IV to t...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/7/108052.jpg"
+        },
+        {
+            name: "Jujuku Shunamur",
+            tagline: "ジュジュ",
+            description: "Juju is a young girl who is a respected Luna (priestess) of the religion of the western continent.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/16/329824.jpg"
+        },
+        {
+            name: "Kasen Kanesada",
+            tagline: "歌仙兼定",
+            description: "The sword of the Sengoku-era lord Hosokawa Tadaoki. He was named after the 36 Immortals of Japanese Poetry, but it was prompted by his master's execut...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "1k",
+            image: "https://cdn.myanimelist.net/images/characters/16/308122.jpg"
+        },
+        {
+            name: "Daisen Rokuriki",
+            tagline: "六力大仙",
+            description: "Age: 25 Height: 179 cm / 5.9 ft",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/5/301597.jpg"
+        },
+        {
+            name: "Enjutsu Kouro",
+            tagline: "袁術 公路 / 美羽",
+            description: "Anime Version A selfish and manipulative noble in Shin Koihime Musō who doesn't care about the plight of her people. She conned Enshō into giving her ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/79866.jpg"
+        },
+        {
+            name: "Kurutsu",
+            tagline: "クルツ",
+            description: "She is the head of the Army 501 Organization, the firm who converted Motoko Kusanagi into a full cyborg and who Kusanagi would replace in the organiza...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/11/449130.jpg"
+        },
+    ],
+    "Bleach": [
+        {
+            name: "Amadeus Freytag von Bleichröder",
+            tagline: "アマデウス フリータクト から ブリーチャー",
+            description: "He is the lord over the southern section of the kingdom where the Baumeister Knight Territory resides . He is the Patron of the Baumeister Knight Terr...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/10/551368.jpg"
+        },
+    ],
+    "High School DxD": [
+        {
+            name: "High School Girl Looking for Her Dog",
+            tagline: "犬を探す女子高生",
+            description: "She is a high school student of Sanada West High School. Her real name is unknown. She asked the Prefectural Sanada North High School student council ...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "2k",
+            image: "https://cdn.myanimelist.net/images/characters/3/158591.jpg"
+        },
+        {
+            name: "High School Girl Spirit",
+            tagline: "女子高生の化け物",
+            description: "Repeatedly says morning to students. She was sentient to the point of being able to speak other words such as \"Can you see me?\". After determining t...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/7/460710.jpg"
+        },
+        {
+            name: "High School Girl",
+            tagline: "女子高生",
+            description: "She is a high school girl who boards the same train as Hidenori every morning. Her real name is unknown. Hidenori noticed a single strand of hair grow...",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/9/263065.jpg"
+        },
+        {
+            name: "Junior High School Student A",
+            tagline: "中学生A",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/13/305748.jpg"
+        },
+        {
+            name: "High School Student ",
+            tagline: "高校生",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.0m",
+            likes: "0k",
+            image: "https://cdn.myanimelist.net/images/characters/8/453545.jpg"
+        },
+        {
+            name: "Ayashigeru High School Captain",
+            tagline: "綾茂高校キャプテン",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/11/619521.jpg"
+        },
+        {
+            name: "High School Friend's Husband",
+            tagline: "High School DxD Anime Character",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/8/603108.jpg"
+        },
+        {
+            name: "High School Friend",
+            tagline: "High School DxD Anime Character",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/6/603107.jpg"
+        },
+        {
+            name: "High School Girl",
+            tagline: "女子高生",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/11/601338.jpg"
+        },
+        {
+            name: "Shiketsu High School Teacher",
+            tagline: "High School DxD Anime Character",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/2/600497.jpg"
+        },
+        {
+            name: "High School Teacher",
+            tagline: "High School DxD Anime Character",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/img/sp/icon/apple-touch-icon-256.png"
+        },
+        {
+            name: "Kaioh Jr. High School Principal",
+            tagline: "High School DxD Anime Character",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/2/560476.jpg"
+        },
+        {
+            name: "High School Girl A",
+            tagline: "女子高生A",
+            description: "A popular High School DxD character from anime.",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/8/538166.jpg"
+        },
+        {
+            name: "High School Student 2",
+            tagline: "High School DxD Anime Character",
+            description: "Appears in Chikan sareteru Kare wo Guuzen wo Hakken shite, teki na Tenkai de. He witnesses a classmate being molested on the train, and offers to acco...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/14/530060.jpg"
+        },
+        {
+            name: "High School Student 1",
+            tagline: "High School DxD Anime Character",
+            description: "Appears in Chikan sareteru Kare wo Guuzen wo Hakken shite, teki na Tenkai de. He is the victim of multiple molestation incidents on the train. No voic...",
+            author: "@jikan_api",
+            views: "0.1m",
+            likes: "5k",
+            image: "https://cdn.myanimelist.net/images/characters/16/530059.jpg"
         },
     ],
 };
+
+export function getCharacterBySlug(slug: string): Character | undefined {
+    const normalize = (str: string) => str.toLowerCase().replace(/\s+/g, '-');
+    for (const category in ALL_CHARACTERS) {
+        const character = ALL_CHARACTERS[category].find(c => normalize(c.name) === slug);
+        if (character) return character;
+    }
+    return undefined;
+}

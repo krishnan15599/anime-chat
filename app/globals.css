@@ -36,6 +36,10 @@ body {
   box-sizing: border-box;
 }
 
+button {
+  cursor: pointer;
+}
+
 /* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 8px;

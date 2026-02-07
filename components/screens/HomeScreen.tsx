@@ -7,7 +7,9 @@ import { ALL_CHARACTERS } from "@/data/characters";
 import CategoryGrid from "@/components/categories/CategoryGrid";
 
 const CATEGORIES = [
-    "Maid", "Warrior", "Assassin", "School", "Fantasy"
+    "Maid", "Warrior", "Assassin", "School", "Fantasy",
+    "Naruto", "One Piece", "Attack on Titan", "Demon Slayer",
+    "Dragon Ball", "Jujutsu Kaisen", "Bleach", "High School DxD"
 ];
 
 export default function HomeScreen() {
