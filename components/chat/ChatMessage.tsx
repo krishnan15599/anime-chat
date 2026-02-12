@@ -6,9 +6,10 @@ interface ChatMessageProps {
     message: string;
     isAi?: boolean;
     time?: string;
+    imageUrl?: string;
 }
 
-export default function ChatMessage({ avatar, name, message, isAi, time }: ChatMessageProps) {
+export default function ChatMessage({ avatar, name, message, isAi, time, imageUrl }: ChatMessageProps) {
     return (
         <div className={`flex items-start gap-4 max-w-2xl mx-auto ${!isAi ? "flex-row-reverse" : ""}`}>
             <div className="w-10 h-10 rounded-full overflow-hidden shrink-0 border border-[var(--border-color)]">
@@ -28,6 +29,16 @@ export default function ChatMessage({ avatar, name, message, isAi, time }: ChatM
                 <div className={`bg-[var(--card-bg)] border border-[var(--border-color)] p-4 rounded-2xl text-sm leading-relaxed text-[var(--foreground)] ${isAi ? "rounded-tl-none shadow-sm" : "rounded-tr-none bg-sky-600/10 dark:bg-sky-600/20 border-sky-500/30 dark:border-sky-500/20"
                     }`}>
                     {message}
+                    {imageUrl && (
+                        <div className="mt-3 rounded-lg overflow-hidden border border-[var(--border-color)]">
+                            <img
+                                src={imageUrl}
+                                alt="Generated anime image"
+                                className="w-full h-auto"
+                                loading="lazy"
+                            />
+                        </div>
+                    )}
                 </div>
             </div>
         </div>

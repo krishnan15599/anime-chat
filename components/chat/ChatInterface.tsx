@@ -27,6 +27,7 @@ export default function ChatInterface({ character }: ChatInterfaceProps) {
         }
     ]);
 
+
     const handleSendMessage = (msg: string) => {
         if (!msg.trim()) return;
 
@@ -36,7 +37,17 @@ export default function ChatInterface({ character }: ChatInterfaceProps) {
             isAi: false,
             timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
         }]);
+
+        // Simple AI response (will be enhanced with Gemini API)
+        setTimeout(() => {
+            setMessages(prev => [...prev, {
+                text: `I understand! Once you add a Gemini API key, I'll respond as ${charName}.`,
+                isAi: true,
+                timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            }]);
+        }, 1000);
     };
+
 
     return (
         <div className="flex-1 flex flex-col relative min-w-0 border-r border-white/5 h-full overflow-hidden">
