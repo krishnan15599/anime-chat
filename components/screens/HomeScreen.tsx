@@ -2,35 +2,23 @@
 
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import Featured from "@/components/categories/Featured";
-import Discover from "@/components/categories/Discover";
-import Helpers from "@/components/categories/Helpers";
 import Footer from "@/components/layout/Footer";
+import { ALL_CHARACTERS } from "@/data/characters";
+import CategoryGrid from "@/components/categories/CategoryGrid";
 
 const CATEGORIES = [
-    "Anime", "Companionship", "OC", "Games", "Game Characters", "BL & ABO", "VTuber"
+    "Maid", "Warrior", "Assassin", "School", "Fantasy",
+    "Naruto", "One Piece", "Attack on Titan", "Demon Slayer",
+    "Dragon Ball", "Jujutsu Kaisen", "Bleach", "High School DxD"
 ];
 
 export default function HomeScreen() {
-    const [activeCategory, setActiveCategory] = useState("Anime");
+    const [activeCategory, setActiveCategory] = useState("Maid");
 
     const renderCategory = () => {
-        switch (activeCategory) {
-            case "Featured":
-            case "Anime":
-                return <Featured />;
-            case "Discover":
-                return <Discover />;
-            case "Helpers":
-                return <Helpers />;
-            default:
-                return (
-                    <div className="flex flex-col items-center justify-center py-20 text-[var(--text-muted)]">
-                        <h3 className="text-xl font-bold mb-2">{activeCategory}</h3>
-                        <p>Coming soon...</p>
-                    </div>
-                );
-        }
+        // Fallback empty array if category not found in data
+        const data = ALL_CHARACTERS[activeCategory] || [];
+        return <CategoryGrid key={activeCategory} category={activeCategory} initialCharacters={data} />;
     };
 
     return (
@@ -61,7 +49,7 @@ export default function HomeScreen() {
             </div>
 
             {/* Dynamic Category Content */}
-            <div className="transition-all duration-500">
+            <div className="min-h-[500px] transition-all duration-500">
                 {renderCategory()}
             </div>
 

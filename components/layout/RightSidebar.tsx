@@ -6,7 +6,7 @@ import RecentChats from "@/components/ui/RecentChats";
 import TrendingList from "@/components/ui/TrendingList";
 
 export default function RightSidebar() {
-    const [isOpen, setIsOpen] = useState(true);
+    const [isOpen, setIsOpen] = useState(false);
 
     return (
         <>
