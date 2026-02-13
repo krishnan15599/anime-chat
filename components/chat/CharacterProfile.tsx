@@ -1,13 +1,14 @@
 "use client";
 
 import { Heart, Share2, MoreHorizontal, MessageSquare, UserPlus, Settings, ChevronDown, Reply, MessageCircle } from "lucide-react";
+import { Character } from "@/components/ui/CharacterCard";
 
 interface CharacterProfileProps {
-    charName: string;
-    charAvatar: string;
+    character: Character;
 }
 
-export default function CharacterProfile({ charName, charAvatar }: CharacterProfileProps) {
+export default function CharacterProfile({ character }: CharacterProfileProps) {
+    const { name: charName, image: charAvatar, views, likes, author } = character;
     return (
         <aside className="w-[450px] hidden xl:flex flex-col border-l border-[var(--border-color)] bg-[var(--sidebar-bg)] h-full overflow-hidden text-[var(--foreground)]">
             {/* Nathan Style Header */}
@@ -39,9 +40,9 @@ export default function CharacterProfile({ charName, charAvatar }: CharacterProf
                         </div>
                         <h2 className="text-3xl font-black mb-2">{charName}</h2>
                         <div className="flex items-center gap-4 text-[10px] font-bold opacity-80 uppercase tracking-widest">
-                            <span className="flex items-center gap-1.5"><Share2 size={12} className="rotate-90" /> 46.7K</span>
-                            <span className="flex items-center gap-1.5"><UserPlus size={12} /> 1.1K</span>
-                            <span className="flex items-center gap-1.5">By @raxcl2002 👋</span>
+                            <span className="flex items-center gap-1.5"><Share2 size={12} className="rotate-90" /> {views || "0"}</span>
+                            <span className="flex items-center gap-1.5"><UserPlus size={12} /> {likes || "0"}</span>
+                            <span className="flex items-center gap-1.5">By {author} 👋</span>
                         </div>
                         <div className="mt-4 flex gap-2">
                             <span className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-[10px] font-bold">ValentinesDay2025</span>

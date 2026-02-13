@@ -3,21 +3,24 @@
 import { useParams } from "next/navigation";
 import ChatInterface from "@/components/chat/ChatInterface";
 import CharacterProfile from "@/components/chat/CharacterProfile";
+import { getCharacterBySlug } from "@/data/characters";
 
 export default function ChatScreen() {
     const params = useParams();
-    const id = params?.id;
+    const id = params?.id as string;
 
-    if (!id) return null;
+    const character = id ? getCharacterBySlug(id) : undefined;
 
-    // Mock data
-    const charName = id.toString().split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
-    const charAvatar = `https://api.dicebear.com/7.x/open-peeps/svg?seed=${charName}`;
+    if (!id || !character) return (
+        <div className="flex items-center justify-center h-screen bg-[var(--background)] text-[var(--text-muted)]">
+            Character not found
+        </div>
+    );
 
     return (
         <div className="fixed inset-0 flex bg-[var(--background)] overflow-hidden z-50">
-            <ChatInterface charName={charName} charAvatar={charAvatar} />
-            <CharacterProfile charName={charName} charAvatar={charAvatar} />
+            <ChatInterface character={character} />
+            <CharacterProfile character={character} />
         </div>
     );
 }

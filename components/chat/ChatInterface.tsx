@@ -1,19 +1,116 @@
 "use client";
 
+import { useState } from "react";
 import { Share2, Heart, ChevronUp, X } from "lucide-react";
 import Link from "next/link";
 import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
+import { Character } from "@/components/ui/CharacterCard";
+import { Loader2 } from "lucide-react";
+import { useEffect } from "react";
+import { saveMessage, getMessagesByChar } from "@/lib/db";
 
-interface ChatInterfaceProps {
-    charName: string;
-    charAvatar: string;
+interface Message {
+    text: string;
+    isAi: boolean;
+    timestamp: string;
 }
 
-export default function ChatInterface({ charName, charAvatar }: ChatInterfaceProps) {
-    const handleSendMessage = (msg: string) => {
-        console.log("Sending message:", msg);
+interface ChatInterfaceProps {
+    character: Character;
+}
+
+export default function ChatInterface({ character }: ChatInterfaceProps) {
+    const { name: charName, image: charAvatar, description, views, likes, author } = character;
+    const charId = charName.toLowerCase().replace(/\s+/g, '-');
+    const [isLoading, setIsLoading] = useState(false);
+    const [messages, setMessages] = useState<Message[]>([]);
+
+    useEffect(() => {
+        const loadHistory = async () => {
+            const history = await getMessagesByChar(charId);
+            if (history.length > 0) {
+                setMessages(history.map(m => ({
+                    text: m.text,
+                    isAi: m.isAi,
+                    timestamp: m.timestamp
+                })));
+            } else {
+                // Initial greeting
+                const greeting = {
+                    text: `Hello there! I am ${charName}. How can I help you today?`,
+                    isAi: true,
+                    timestamp: 'Just now'
+                };
+                setMessages([greeting]);
+                await saveMessage({
+                    charSlug: charId,
+                    ...greeting
+                });
+            }
+        };
+        loadHistory();
+    }, [charId, charName]);
+
+
+    const handleSendMessage = async (msg: string) => {
+        if (!msg.trim() || isLoading) return;
+
+        const userMessage = {
+            text: msg,
+            isAi: false,
+            timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+        };
+
+        // Add user message
+        const updatedMessages = [...messages, userMessage];
+        setMessages(updatedMessages);
+        await saveMessage({
+            charSlug: charId,
+            ...userMessage
+        });
+        setIsLoading(true);
+
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: msg,
+                    character: character,
+                    history: updatedMessages
+                })
+            });
+
+            const data = await response.json();
+
+            if (data.error) {
+                throw new Error(data.error);
+            }
+
+            const aiMessage = {
+                text: data.reply,
+                isAi: true,
+                timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            };
+
+            setMessages(prev => [...prev, aiMessage]);
+            await saveMessage({
+                charSlug: charId,
+                ...aiMessage
+            });
+        } catch (error: any) {
+            console.error("Chat Error:", error);
+            setMessages(prev => [...prev, {
+                text: `Sorry, I encountered an error: ${error.message}. Please check if the OPENROUTER_API_KEY is correctly set in .env.local`,
+                isAi: true,
+                timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            }]);
+        } finally {
+            setIsLoading(false);
+        }
     };
+
 
     return (
         <div className="flex-1 flex flex-col relative min-w-0 border-r border-white/5 h-full overflow-hidden">
@@ -37,14 +134,14 @@ export default function ChatInterface({ charName, charAvatar }: ChatInterfacePro
                     <div className="flex items-center gap-4 text-xs text-zinc-400 mb-6">
                         <div className="flex items-center gap-1">
                             <Share2 size={14} className="rotate-90" />
-                            <span>35.6K</span>
+                            <span>{views || "0"}</span>
                         </div>
                         <div className="flex items-center gap-1">
                             <Heart size={14} />
-                            <span>9.5K</span>
+                            <span>{likes || "0"}</span>
                         </div>
                         <div className="flex items-center gap-1">
-                            <span>By @Animora 1082786</span>
+                            <span>By {author || "@unknown"}</span>
                         </div>
                     </div>
                     <button className="px-10 py-2.5 bg-white text-black font-black rounded-full text-sm hover:bg-zinc-200 transition-colors uppercase tracking-wider">
@@ -57,7 +154,7 @@ export default function ChatInterface({ charName, charAvatar }: ChatInterfacePro
                     <div className="bg-zinc-900/50 p-6 rounded-2xl border border-white/5">
                         <p className="text-sm leading-relaxed text-zinc-300">
                             <span className="font-black text-white mr-2">Intro</span>
-                            I am {charName}, the 77th Director of the Wangsheng Funeral Parlor. Eccentric and lively, I may have an unusual fascination with death, but my ultimate goal is to guide souls to their final rest.
+                            {description}
                             <ChevronUp size={16} className="inline ml-1 opacity-50 text-white" />
                         </p>
                     </div>
@@ -65,14 +162,29 @@ export default function ChatInterface({ charName, charAvatar }: ChatInterfacePro
 
                 {/* History */}
                 <div className="space-y-8">
-                    <ChatMessage
-                        avatar={charAvatar}
-                        name={charName}
-                        isAi
-                        time='7"'
-                        message="Greetings! Have you come to make funeral arrangements or just to chat? I'm happy to oblige either way! (grins cheerfully)"
-                    />
-                    {/* Additional mock messages can be added here */}
+                    {messages.map((msg, index) => (
+                        <ChatMessage
+                            key={index}
+                            avatar={msg.isAi ? (charAvatar || "") : "https://api.dicebear.com/7.x/avataaars/svg?seed=User"}
+                            name={msg.isAi ? charName : "You"}
+                            isAi={msg.isAi}
+                            time={msg.isAi ? msg.timestamp : undefined}
+                            message={msg.text}
+                        />
+                    ))}
+
+                    {/* Loading State */}
+                    {isLoading && (
+                        <div className="flex items-center gap-3 text-zinc-500 animate-pulse">
+                            <div className="w-8 h-8 rounded-full overflow-hidden border border-white/5 opacity-50">
+                                <img src={charAvatar} alt={charName} className="w-full h-full object-cover grayscale" />
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="text-xs font-medium">{charName} is typing</span>
+                                <Loader2 size={12} className="animate-spin" />
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
 

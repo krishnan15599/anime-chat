@@ -1,5 +1,9 @@
-import { MessageSquare, Heart, Eye } from "lucide-react";
+"use client";
+
+import { MessageSquare, Heart, Eye, History } from "lucide-react";
 import Link from "next/link";
+import { useEffect, useState } from "react";
+import { getLastMessage, ChatMessage } from "@/lib/db";
 
 export interface Character {
     name: string;
@@ -20,6 +24,15 @@ interface CharacterCardProps {
 export default function CharacterCard({ character }: CharacterCardProps) {
     const defaultImage = `https://api.dicebear.com/7.x/open-peeps/svg?seed=${character.name}`;
     const charId = character.name.toLowerCase().replace(/\s+/g, '-');
+    const [lastMsg, setLastMsg] = useState<ChatMessage | null>(null);
+
+    useEffect(() => {
+        const fetchStatus = async () => {
+            const msg = await getLastMessage(charId);
+            setLastMsg(msg);
+        };
+        fetchStatus();
+    }, [charId]);
 
     return (
         <div className="group relative aspect-[3/4] cursor-pointer overflow-hidden rounded-xl bg-[var(--card-bg)] hover:scale-[1.02] hover:shadow-2xl hover:shadow-black/20 dark:hover:shadow-black/50 border border-[var(--border-color)] transition-all duration-300 ease-out">
@@ -45,32 +58,50 @@ export default function CharacterCard({ character }: CharacterCardProps) {
                 </div>
 
                 <div className="flex-1 min-h-0 mb-4 overflow-hidden">
-                    <p className="text-white text-xs leading-relaxed line-clamp-[7]">
-                        {(character.description || character.tagline).split(" ").map((word, i) => (
-                            <span
-                                key={i}
-                                className="inline-block opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 ease-out"
-                                style={{ transitionDelay: `${i * 70}ms` }}
-                            >
-                                {word}&nbsp;
-                            </span>
-                        ))}
-                    </p>
+                    {lastMsg ? (
+                        <div className="space-y-2">
+                            <p className="text-[10px] uppercase font-black tracking-widest text-yellow-500 flex items-center gap-1">
+                                <History size={10} />
+                                Last Message
+                            </p>
+                            <p className="text-white text-xs leading-relaxed line-clamp-[6] italic bg-white/5 p-2 rounded-lg border border-white/10">
+                                "{lastMsg.text}"
+                            </p>
+                        </div>
+                    ) : (
+                        <p className="text-white text-xs leading-relaxed line-clamp-[7]">
+                            {(character.description || character.tagline).split(" ").map((word, i) => (
+                                <span
+                                    key={i}
+                                    className="inline-block opacity-0 translate-y-1 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-150 ease-out"
+                                    style={{ transitionDelay: `${i * 70}ms` }}
+                                >
+                                    {word}&nbsp;
+                                </span>
+                            ))}
+                        </p>
+                    )}
                 </div>
 
                 <Link
                     href={`/chat/${charId}`}
                     className="w-full py-2.5 px-4 bg-white text-black rounded-full text-xs font-bold flex items-center justify-center gap-2 hover:bg-zinc-200 transition-colors shrink-0"
                 >
-                    <MessageSquare size={16} className="fill-current" />
-                    Chat Now
+                    <MessageSquare size={16} className={lastMsg ? "fill-yellow-500 text-yellow-500" : "fill-current"} />
+                    {lastMsg ? "Continue Chat" : "Chat Now"}
                 </Link>
             </div>
 
             {/* Badges */}
-            {character.isNew && (
+            {character.isNew && !lastMsg && (
                 <div className="absolute right-0 top-0 z-30 overflow-hidden rounded-bl-xl bg-yellow-500 px-3 py-1 text-[10px] font-black uppercase tracking-tighter text-black shadow-lg">
                     New
+                </div>
+            )}
+            {lastMsg && (
+                <div className="absolute right-0 top-0 z-30 overflow-hidden rounded-bl-xl bg-green-500 px-3 py-1 text-[10px] font-black uppercase tracking-tighter text-black shadow-lg flex items-center gap-1">
+                    <div className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+                    Active
                 </div>
             )}
 
@@ -80,7 +111,7 @@ export default function CharacterCard({ character }: CharacterCardProps) {
                     {character.name}
                 </h3>
                 <p className="text-[10px] text-zinc-100 line-clamp-2 leading-relaxed mb-3 opacity-90">
-                    {character.tagline}
+                    {lastMsg ? `Last: ${lastMsg.text}` : character.tagline}
                 </p>
 
                 {/* Footer Stats */}
