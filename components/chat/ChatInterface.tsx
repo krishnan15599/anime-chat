@@ -6,6 +6,9 @@ import Link from "next/link";
 import ChatMessage from "./ChatMessage";
 import ChatInput from "./ChatInput";
 import { Character } from "@/components/ui/CharacterCard";
+import { Loader2 } from "lucide-react";
+import { useEffect } from "react";
+import { saveMessage, getMessagesByChar } from "@/lib/db";
 
 interface Message {
     text: string;
@@ -19,33 +22,93 @@ interface ChatInterfaceProps {
 
 export default function ChatInterface({ character }: ChatInterfaceProps) {
     const { name: charName, image: charAvatar, description, views, likes, author } = character;
-    const [messages, setMessages] = useState<Message[]>([
-        {
-            text: `Hello there! I am ${charName}. How can I help you today?`,
-            isAi: true,
-            timestamp: 'Just now'
-        }
-    ]);
+    const charId = charName.toLowerCase().replace(/\s+/g, '-');
+    const [isLoading, setIsLoading] = useState(false);
+    const [messages, setMessages] = useState<Message[]>([]);
+
+    useEffect(() => {
+        const loadHistory = async () => {
+            const history = await getMessagesByChar(charId);
+            if (history.length > 0) {
+                setMessages(history.map(m => ({
+                    text: m.text,
+                    isAi: m.isAi,
+                    timestamp: m.timestamp
+                })));
+            } else {
+                // Initial greeting
+                const greeting = {
+                    text: `Hello there! I am ${charName}. How can I help you today?`,
+                    isAi: true,
+                    timestamp: 'Just now'
+                };
+                setMessages([greeting]);
+                await saveMessage({
+                    charSlug: charId,
+                    ...greeting
+                });
+            }
+        };
+        loadHistory();
+    }, [charId, charName]);
 
 
-    const handleSendMessage = (msg: string) => {
-        if (!msg.trim()) return;
+    const handleSendMessage = async (msg: string) => {
+        if (!msg.trim() || isLoading) return;
 
-        // Add user message
-        setMessages(prev => [...prev, {
+        const userMessage = {
             text: msg,
             isAi: false,
             timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
-        }]);
+        };
 
-        // Simple AI response (will be enhanced with Gemini API)
-        setTimeout(() => {
+        // Add user message
+        const updatedMessages = [...messages, userMessage];
+        setMessages(updatedMessages);
+        await saveMessage({
+            charSlug: charId,
+            ...userMessage
+        });
+        setIsLoading(true);
+
+        try {
+            const response = await fetch('/api/chat', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    message: msg,
+                    character: character,
+                    history: updatedMessages
+                })
+            });
+
+            const data = await response.json();
+
+            if (data.error) {
+                throw new Error(data.error);
+            }
+
+            const aiMessage = {
+                text: data.reply,
+                isAi: true,
+                timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
+            };
+
+            setMessages(prev => [...prev, aiMessage]);
+            await saveMessage({
+                charSlug: charId,
+                ...aiMessage
+            });
+        } catch (error: any) {
+            console.error("Chat Error:", error);
             setMessages(prev => [...prev, {
-                text: `I understand! Once you add a Gemini API key, I'll respond as ${charName}.`,
+                text: `Sorry, I encountered an error: ${error.message}. Please check if the OPENROUTER_API_KEY is correctly set in .env.local`,
                 isAi: true,
                 timestamp: new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })
             }]);
-        }, 1000);
+        } finally {
+            setIsLoading(false);
+        }
     };
 
 
@@ -109,6 +172,19 @@ export default function ChatInterface({ character }: ChatInterfaceProps) {
                             message={msg.text}
                         />
                     ))}
+
+                    {/* Loading State */}
+                    {isLoading && (
+                        <div className="flex items-center gap-3 text-zinc-500 animate-pulse">
+                            <div className="w-8 h-8 rounded-full overflow-hidden border border-white/5 opacity-50">
+                                <img src={charAvatar} alt={charName} className="w-full h-full object-cover grayscale" />
+                            </div>
+                            <div className="flex items-center gap-2">
+                                <span className="text-xs font-medium">{charName} is typing</span>
+                                <Loader2 size={12} className="animate-spin" />
+                            </div>
+                        </div>
+                    )}
                 </div>
             </div>
 

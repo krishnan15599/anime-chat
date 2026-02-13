@@ -17,7 +17,7 @@ export default function Sidebar() {
 
     return (
         <aside className="fixed left-0 top-0 z-40 h-screen w-20 flex-col items-center border-r border-[var(--border-color)] bg-[var(--sidebar-bg)] py-8 hidden sm:flex transition-none">
-            <div className="mb-8 p-2">
+            <div className="mb-8 p-2 mt-10">
                 <div className="h-10 w-10 rounded-xl bg-sky-500 flex items-center justify-center font-bold text-white italic shadow-lg shadow-sky-500/20">
                     ai
                 </div>
