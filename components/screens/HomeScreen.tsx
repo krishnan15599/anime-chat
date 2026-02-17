@@ -3,20 +3,21 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, MessageSquare } from "lucide-react";
 import Footer from "@/components/layout/Footer";
-import { ALL_CHARACTERS, getCharacterBySlug } from "@/data/characters";
+import { ALL_CHARACTERS, CATEGORIES, getCharacterBySlug } from "@/data/characters";
 import CategoryGrid from "@/components/categories/CategoryGrid";
 import { getAllActiveSlugs } from "@/lib/db";
 import CharacterCard, { Character } from "@/components/ui/CharacterCard";
 
-const CATEGORIES = [
-    "Maid", "Warrior", "Assassin", "School", "Fantasy",
-    "Naruto", "One Piece", "Attack on Titan", "Demon Slayer",
-    "Dragon Ball", "Jujutsu Kaisen", "Bleach", "High School DxD"
-];
-
 export default function HomeScreen() {
-    const [activeCategory, setActiveCategory] = useState("Maid");
+    const GENERIC_CATEGORIES = [
+        "Maid", "School", "Fantasy", "Action", "Romance", "Comedy", "Warrior", "Assassin"
+    ];
+    // Filter out generic categories to get the anime series list
+    const animeCategories = CATEGORIES.filter(cat => !GENERIC_CATEGORIES.includes(cat));
+
+    const [activeCategory, setActiveCategory] = useState(GENERIC_CATEGORIES[0]);
     const [recentCharacters, setRecentCharacters] = useState<Character[]>([]);
+    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
     useEffect(() => {
         const loadRecent = async () => {
@@ -33,6 +34,8 @@ export default function HomeScreen() {
         const data = ALL_CHARACTERS[activeCategory] || [];
         return <CategoryGrid key={activeCategory} category={activeCategory} initialCharacters={data} />;
     };
+
+    const isAnimeCategory = animeCategories.includes(activeCategory);
 
     return (
         <div className="p-4 lg:p-8 max-w-[1600px] mx-auto space-y-12">
@@ -57,10 +60,13 @@ export default function HomeScreen() {
                 <div className="flex flex-col gap-6">
                     <div className="flex items-center justify-between gap-4">
                         <div className="flex items-center gap-2 overflow-x-auto no-scrollbar scroll-smooth">
-                            {CATEGORIES.map((cat) => (
+                            {GENERIC_CATEGORIES.map((cat) => (
                                 <button
                                     key={cat}
-                                    onClick={() => setActiveCategory(cat)}
+                                    onClick={() => {
+                                        setActiveCategory(cat);
+                                        setIsDropdownOpen(false);
+                                    }}
                                     className={`px-5 py-2.5 rounded-lg text-xs font-bold whitespace-nowrap transition-all duration-200 ${activeCategory === cat
                                         ? "bg-zinc-800 dark:bg-zinc-700 text-white shadow-lg"
                                         : "bg-black/5 dark:bg-white/5 text-[var(--text-muted)] hover:text-[var(--foreground)] hover:bg-black/10 dark:hover:bg-white/10"
@@ -71,9 +77,43 @@ export default function HomeScreen() {
                             ))}
                         </div>
 
-                        <button className="flex items-center gap-2 px-5 py-2.5 rounded-lg bg-black/5 dark:bg-white/5 text-[var(--text-muted)] text-xs font-bold hover:bg-black/10 dark:hover:bg-white/10 border border-[var(--border-color)]">
-                            Popular <ChevronDown size={14} />
-                        </button>
+                        {/* Popular / Anime Series Dropdown */}
+                        <div className="relative">
+                            <button
+                                onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+                                className={`flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-bold border transition-all ${isDropdownOpen || isAnimeCategory
+                                    ? "bg-zinc-800 dark:bg-zinc-700 text-white border-zinc-700"
+                                    : "bg-black/5 dark:bg-white/5 text-[var(--text-muted)] border-[var(--border-color)] hover:bg-black/10 dark:hover:bg-white/10"
+                                    }`}
+                            >
+                                {isAnimeCategory ? activeCategory : "Popular"} <ChevronDown size={14} className={`transition-transform duration-200 ${isDropdownOpen ? "rotate-180" : ""}`} />
+                            </button>
+
+                            {isDropdownOpen && (
+                                <div className="absolute right-0 top-full mt-2 w-64 max-h-[400px] overflow-y-auto bg-[var(--card-bg)] border border-[var(--border-color)] rounded-xl shadow-2xl z-50 animate-in fade-in zoom-in-95 duration-200">
+                                    <div className="p-2 space-y-1">
+                                        <div className="px-3 py-2 text-[10px] font-black uppercase tracking-wider text-[var(--text-muted)]">
+                                            Anime Series
+                                        </div>
+                                        {animeCategories.map((anime) => (
+                                            <button
+                                                key={anime}
+                                                onClick={() => {
+                                                    setActiveCategory(anime);
+                                                    setIsDropdownOpen(false);
+                                                }}
+                                                className={`w-full text-left px-3 py-2 text-xs font-bold rounded-lg transition-colors ${activeCategory === anime
+                                                    ? "bg-yellow-500/10 text-yellow-500"
+                                                    : "text-[var(--foreground)] hover:bg-black/5 dark:hover:bg-white/5"
+                                                    }`}
+                                            >
+                                                {anime}
+                                            </button>
+                                        ))}
+                                    </div>
+                                </div>
+                            )}
+                        </div>
                     </div>
                 </div>
 
