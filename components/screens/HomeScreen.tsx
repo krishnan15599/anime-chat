@@ -10,7 +10,7 @@ import CharacterCard, { Character } from "@/components/ui/CharacterCard";
 
 export default function HomeScreen() {
     const GENERIC_CATEGORIES = [
-        "Maid", "School", "Fantasy", "Action", "Romance", "Comedy", "One Piece", "Naruto", "Dragon Ball"
+        "Maid", "School", "Fantasy", "Action", "Romance", "Comedy", "Warrior", "Assassin"
     ];
     // Filter out generic categories to get the anime series list
     const animeCategories = CATEGORIES.filter(cat => !GENERIC_CATEGORIES.includes(cat));

@@ -4,7 +4,7 @@ const path = require('path');
 const OUTPUT_FILE = path.join(__dirname, '../data/characters.ts');
 
 const GENERIC_CATEGORIES = [
-    "Maid", "School", "Fantasy", "Action", "Romance", "Comedy", "One Piece", "Naruto", "Dragon Ball"
+    "Maid", "School", "Fantasy", "Action", "Romance", "Comedy", "Warrior", "Assassin"
 ];
 
 // Jikan API Reference: https://docs.api.jikan.moe/
@@ -130,30 +130,31 @@ async function getCharacterDetails(charId) {
 // Or just accept missing descriptions.
 // Let's try to fetch details for top 5 chars of each anime.
 
-async function processCharacter(char, defaultTagline, fetchDetails = false) {
+async function processCharacter(input, defaultTagline, fetchDetails = false) {
+    const char = input.character || input;
     let details = char;
-    if (fetchDetails) {
+
+    if (fetchDetails && char.mal_id) {
         const fullDetails = await getCharacterDetails(char.mal_id);
         if (fullDetails) details = { ...char, ...fullDetails };
-        await delay(500); // Small delay for details fetch
+        await delay(500);
     }
 
-    const name = details.name.replace(/"/g, '');
+    const name = (details.name || "Unknown").replace(/"/g, '');
     const tagline = details.name_kanji ? details.name_kanji.replace(/"/g, '') : defaultTagline;
 
     let description = details.about || details.description || `A popular character from ${defaultTagline}.`;
     description = description.replace(/[\r\n]+/g, ' ').trim();
     description = description.replace(/"/g, '\\"');
 
-    // Truncate
     if (description.length > 250) {
         description = description.substring(0, 247) + "...";
     }
 
-    const imageUrl = details.images?.jpg?.image_url || char.images?.jpg?.image_url;
-
-    const views = ((details.favorites || 100) / 1000).toFixed(1) + "m";
-    const likes = Math.floor((details.favorites || 50) / 10) + "k";
+    const imageUrl = details.images?.webp?.image_url || details.images?.jpg?.image_url || char.images?.webp?.image_url || char.images?.jpg?.image_url;
+    const favorites = input.favorites || details.favorites || 0;
+    const views = (favorites * 12).toLocaleString('en-US', { notation: 'compact' }).toLowerCase();
+    const likes = (favorites).toLocaleString('en-US', { notation: 'compact' }).toLowerCase();
 
     return {
         name,
@@ -162,7 +163,8 @@ async function processCharacter(char, defaultTagline, fetchDetails = false) {
         author: "@jikan_api",
         views,
         likes,
-        image: imageUrl
+        image: imageUrl,
+        mal_id: char.mal_id
     };
 }
 
