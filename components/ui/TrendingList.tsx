@@ -6,17 +6,22 @@ import { Character } from "@/components/ui/CharacterCard";
 
 export default function TrendingList() {
     // Get a variety of characters for the trending list
-    const trendingCharacters = [
-        ...ALL_CHARACTERS["Naruto"].slice(0, 2),
-        ...ALL_CHARACTERS["Maid"].slice(0, 1),
-        ...ALL_CHARACTERS["Demon Slayer"].slice(0, 1),
-        ...ALL_CHARACTERS["Jujutsu Kaisen"].slice(0, 1),
-        ...ALL_CHARACTERS["Attack on Titan"].slice(0, 1),
-    ].map((char, index) => ({
-        ...char,
-        rank: index + 1,
-        slug: char.name.toLowerCase().replace(/\s+/g, '-')
-    }));
+    // Get characters from all categories, flatten, and sort by likes/views
+    const trendingCharacters = Object.values(ALL_CHARACTERS)
+        .flat()
+        .sort((a, b) => {
+            const likesAStr = a.likes || "0";
+            const likesBStr = b.likes || "0";
+            const likesA = parseInt(likesAStr.replace(/k|m/g, '')) * (likesAStr.includes('m') ? 1000 : 1);
+            const likesB = parseInt(likesBStr.replace(/k|m/g, '')) * (likesBStr.includes('m') ? 1000 : 1);
+            return likesB - likesA;
+        })
+        .slice(0, 5)
+        .map((char, index) => ({
+            ...char,
+            rank: index + 1,
+            slug: char.name.toLowerCase().replace(/\s+/g, '-')
+        }));
 
     return (
         <div className="space-y-6">

@@ -3,19 +3,13 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, MessageSquare } from "lucide-react";
 import Footer from "@/components/layout/Footer";
-import { ALL_CHARACTERS, getCharacterBySlug } from "@/data/characters";
+import { ALL_CHARACTERS, CATEGORIES, getCharacterBySlug } from "@/data/characters";
 import CategoryGrid from "@/components/categories/CategoryGrid";
 import { getAllActiveSlugs } from "@/lib/db";
 import CharacterCard, { Character } from "@/components/ui/CharacterCard";
 
-const CATEGORIES = [
-    "Maid", "Warrior", "Assassin", "School", "Fantasy",
-    "Naruto", "One Piece", "Attack on Titan", "Demon Slayer",
-    "Dragon Ball", "Jujutsu Kaisen", "Bleach", "High School DxD"
-];
-
 export default function HomeScreen() {
-    const [activeCategory, setActiveCategory] = useState("Maid");
+    const [activeCategory, setActiveCategory] = useState(CATEGORIES[0] || "Maid");
     const [recentCharacters, setRecentCharacters] = useState<Character[]>([]);
 
     useEffect(() => {
