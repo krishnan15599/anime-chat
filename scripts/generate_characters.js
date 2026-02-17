@@ -4,7 +4,7 @@ const path = require('path');
 const OUTPUT_FILE = path.join(__dirname, '../data/characters.ts');
 
 const GENERIC_CATEGORIES = [
-    "Maid", "Warrior", "Assassin", "School", "Fantasy"
+    "Maid", "School", "Fantasy", "Action", "Romance", "Comedy", "One Piece", "Naruto", "Dragon Ball"
 ];
 
 // Jikan API Reference: https://docs.api.jikan.moe/
@@ -70,9 +70,44 @@ async function fetchAnimeCharacters(animeId) {
 }
 
 async function fetchGenericCategory(category) {
+    console.log(`Fetching generic category: ${category}`);
     const query = category.toLowerCase();
-    const data = await fetchWithRetry(`${BASE_URL}/characters?q=${query}&order_by=favorites&sort=desc&limit=20`);
-    return data || [];
+
+    // 1. Search for Top Anime matching the category/genre
+    const animeData = await fetchWithRetry(`${BASE_URL}/anime?q=${query}&order_by=popularity&sort=asc&limit=3`);
+    if (!animeData) return [];
+
+    let categoryChars = [];
+
+    // 2. Fetch characters from these top anime
+    for (const anime of animeData) {
+        console.log(`  > Found anime: ${anime.title}. Fetching chars...`);
+        const chars = await fetchAnimeCharacters(anime.mal_id);
+
+        // Process top 5 chars
+        let count = 0;
+        for (const char of chars) {
+            if (count >= 5) break;
+            const processed = await processCharacter(char, anime.title, count < 2); // Fetch details for top 2
+            if (processed.image) {
+                categoryChars.push(processed);
+            }
+            count++;
+        }
+        await delay(1000);
+    }
+
+    // Remove duplicates
+    const uniqueChars = [];
+    const seenNames = new Set();
+    for (const char of categoryChars) {
+        if (!seenNames.has(char.name)) {
+            seenNames.add(char.name);
+            uniqueChars.push(char);
+        }
+    }
+
+    return uniqueChars.slice(0, 20); // Limit to 20 total
 }
 
 // Check if character details need to be fetched? 
