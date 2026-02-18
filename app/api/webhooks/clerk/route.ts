@@ -17,23 +17,19 @@ export async function POST(req: Request) {
     const svix_timestamp = headerPayload.get("svix-timestamp");
     const svix_signature = headerPayload.get("svix-signature");
 
-    // If there are no headers, error out
     if (!svix_id || !svix_timestamp || !svix_signature) {
         return new Response("Error occurred -- no svix headers", {
             status: 400,
         });
     }
 
-    // Get the body
     const payload = await req.json();
     const body = JSON.stringify(payload);
 
-    // Create a new Svix instance with your secret.
     const wh = new Webhook(WEBHOOK_SECRET);
 
     let evt: WebhookEvent;
 
-    // Verify the payload with the headers
     try {
         evt = wh.verify(body, {
             "svix-id": svix_id,
@@ -56,14 +52,10 @@ export async function POST(req: Request) {
         const { email_addresses, id, username, image_url } = evt.data;
         const email = email_addresses[0]?.email_address;
 
-        // Use upsert to handle both creation and updates
         const { error } = await supabaseAdmin.from("users").upsert(
             {
                 clerk_id: id,
                 email: email,
-                // Add username and image_url if you add these columns to your table later
-                // username: username,
-                // image_url: image_url,
             },
             { onConflict: "clerk_id" }
         );
