@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { Search, BookOpen, HelpCircle, ChevronDown, X, MessageSquare, Flame } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import { ALL_CHARACTERS } from "@/data/characters";
+import { searchCharactersFromDB } from "@/data/characters";
 import { Character } from "@/components/ui/CharacterCard";
 import { useRouter } from "next/navigation";
 
@@ -16,21 +16,20 @@ export default function Header() {
     const router = useRouter();
     const dropdownRef = useRef<HTMLDivElement>(null);
 
-    // Get all characters as a flat list
-    const allChars = Object.values(ALL_CHARACTERS).flat();
-
     useEffect(() => {
         if (!query.trim()) {
             setResults([]);
             return;
         }
 
-        const filtered = allChars.filter(char =>
-            char.name.toLowerCase().includes(query.toLowerCase()) ||
-            char.tagline.toLowerCase().includes(query.toLowerCase())
-        ).slice(0, 8); // Limit to 8 results for the dropdown
+        const fetchResults = async () => {
+            const searchResults = await searchCharactersFromDB(query);
+            setResults(searchResults);
+        };
 
-        setResults(filtered);
+        // Debounce slightly for better performance
+        const timeout = setTimeout(fetchResults, 300);
+        return () => clearTimeout(timeout);
     }, [query]);
 
     // Handle clicking outside to close

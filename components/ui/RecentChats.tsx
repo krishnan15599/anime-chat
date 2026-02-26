@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import { getAllActiveSlugs, getLastMessage, ChatMessage } from "@/lib/db";
-import { getCharacterBySlug } from "@/data/characters";
+import { getCharacterBySlugFromDB } from "@/data/characters";
 import { Character } from "@/components/ui/CharacterCard";
 
 interface RecentChatData {
@@ -20,7 +20,7 @@ export default function RecentChats() {
             const slugs = await getAllActiveSlugs();
             const data = await Promise.all(
                 slugs.map(async (slug) => {
-                    const character = getCharacterBySlug(slug);
+                    const character = await getCharacterBySlugFromDB(slug);
                     const lastMsg = await getLastMessage(slug);
                     if (character && lastMsg) {
                         return { character, lastMessage: lastMsg, slug };

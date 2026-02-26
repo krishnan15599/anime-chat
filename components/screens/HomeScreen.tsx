@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, MessageSquare } from "lucide-react";
 import Footer from "@/components/layout/Footer";
-import { ALL_CHARACTERS, CATEGORIES, getCharacterBySlug } from "@/data/characters";
+import { CATEGORIES, getCharacterBySlugFromDB, getCharactersByCategoryFromDB } from "@/data/characters";
 import CategoryGrid from "@/components/categories/CategoryGrid";
 import { getAllActiveSlugs } from "@/lib/db";
 import CharacterCard, { Character } from "@/components/ui/CharacterCard";
@@ -16,24 +16,33 @@ export default function HomeScreen() {
     const animeCategories = CATEGORIES.filter(cat => !GENERIC_CATEGORIES.includes(cat));
 
     const [activeCategory, setActiveCategory] = useState(GENERIC_CATEGORIES[0]);
+    const [categoryCharacters, setCategoryCharacters] = useState<Character[]>([]);
     const [recentCharacters, setRecentCharacters] = useState<Character[]>([]);
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
 
+    // Load recent characters from local DB (IndexedDB) and sync with Supabase info
     useEffect(() => {
         const loadRecent = async () => {
             const slugs = await getAllActiveSlugs();
-            const characters = slugs
-                .map(slug => getCharacterBySlug(slug))
-                .filter((c): c is Character => !!c);
-            setRecentCharacters(characters);
+            const characters = await Promise.all(
+                slugs.map(slug => getCharacterBySlugFromDB(slug))
+            );
+            setRecentCharacters(characters.filter((c): c is Character => !!c));
         };
         loadRecent();
     }, []);
 
-    const renderCategory = () => {
-        const data = ALL_CHARACTERS[activeCategory] || [];
-        return <CategoryGrid key={activeCategory} category={activeCategory} initialCharacters={data} />;
-    };
+    // Load characters for the active category from Supabase
+    useEffect(() => {
+        const loadCategoryData = async () => {
+            setIsLoading(true);
+            const data = await getCharactersByCategoryFromDB(activeCategory);
+            setCategoryCharacters(data);
+            setIsLoading(false);
+        };
+        loadCategoryData();
+    }, [activeCategory]);
 
     const isAnimeCategory = animeCategories.includes(activeCategory);
 
@@ -119,7 +128,17 @@ export default function HomeScreen() {
 
                 {/* Dynamic Category Content */}
                 <div className="min-h-[500px] transition-all duration-500">
-                    {renderCategory()}
+                    {isLoading ? (
+                        <div className="flex items-center justify-center py-20">
+                            <div className="w-12 h-12 border-4 border-yellow-500/20 border-t-yellow-500 rounded-full animate-spin" />
+                        </div>
+                    ) : (
+                        <CategoryGrid
+                            key={activeCategory}
+                            category={activeCategory}
+                            initialCharacters={categoryCharacters}
+                        />
+                    )}
                 </div>
             </div>
 

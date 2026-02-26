@@ -1,27 +1,22 @@
-"use client";
-
-import { ALL_CHARACTERS } from "@/data/characters";
+import { useEffect, useState } from "react";
+import { getTrendingCharactersFromDB } from "@/data/characters";
 import Link from "next/link";
 import { Character } from "@/components/ui/CharacterCard";
 
 export default function TrendingList() {
-    // Get a variety of characters for the trending list
-    // Get characters from all categories, flatten, and sort by likes/views
-    const trendingCharacters = Object.values(ALL_CHARACTERS)
-        .flat()
-        .sort((a, b) => {
-            const likesAStr = a.likes || "0";
-            const likesBStr = b.likes || "0";
-            const likesA = parseInt(likesAStr.replace(/k|m/g, '')) * (likesAStr.includes('m') ? 1000 : 1);
-            const likesB = parseInt(likesBStr.replace(/k|m/g, '')) * (likesBStr.includes('m') ? 1000 : 1);
-            return likesB - likesA;
-        })
-        .slice(0, 5)
-        .map((char, index) => ({
-            ...char,
-            rank: index + 1,
-            slug: char.name.toLowerCase().replace(/\s+/g, '-')
-        }));
+    const [trendingCharacters, setTrendingCharacters] = useState<(Character & { rank: number, slug: string })[]>([]);
+
+    useEffect(() => {
+        const fetchTrending = async () => {
+            const data = await getTrendingCharactersFromDB();
+            setTrendingCharacters(data.map((char, index) => ({
+                ...char,
+                rank: index + 1,
+                slug: char.name.toLowerCase().replace(/\s+/g, '-')
+            })));
+        };
+        fetchTrending();
+    }, []);
 
     return (
         <div className="space-y-6">
