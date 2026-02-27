@@ -8,8 +8,15 @@ import { ClerkProvider } from "@clerk/nextjs";
 
 if (!process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY) {
   console.error("********************************************************************************");
-  console.error("CRITICAL ERROR: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY is missing from environment variables!");
+  console.error("CRITICAL ERROR: NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY is missing!");
   console.error("Please add this key to your Vercel Project Settings > Environment Variables.");
+  console.error("********************************************************************************");
+}
+
+if (!process.env.NEXT_PUBLIC_SUPABASE_URL || !process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY) {
+  console.error("********************************************************************************");
+  console.error("CRITICAL ERROR: Supabase Keys are missing from environment variables!");
+  console.error("Please add NEXT_PUBLIC_SUPABASE_URL and NEXT_PUBLIC_SUPABASE_ANON_KEY to Vercel.");
   console.error("********************************************************************************");
 }
 
