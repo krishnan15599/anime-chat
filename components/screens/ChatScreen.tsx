@@ -4,7 +4,7 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import ChatInterface from "@/components/chat/ChatInterface";
 import CharacterProfile from "@/components/chat/CharacterProfile";
-import { getCharacterBySlugFromDB } from "@/data/characters";
+import { getCharacterBySlug } from "@/lib/services/characterService";
 import { Character } from "@/components/ui/CharacterCard";
 
 export default function ChatScreen() {
@@ -16,7 +16,7 @@ export default function ChatScreen() {
     useEffect(() => {
         if (!id) return;
         const fetch = async () => {
-            const char = await getCharacterBySlugFromDB(id);
+            const char = await getCharacterBySlug(id);
             setCharacter(char);
             setLoading(false);
         };

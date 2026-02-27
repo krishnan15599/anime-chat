@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getTrendingCharactersFromDB } from "@/data/characters";
+import { getTrendingCharacters } from "@/lib/services/characterService";
 import Link from "next/link";
 import { Character } from "@/components/ui/CharacterCard";
 
@@ -8,7 +8,7 @@ export default function TrendingList() {
 
     useEffect(() => {
         const fetchTrending = async () => {
-            const data = await getTrendingCharactersFromDB();
+            const data = await getTrendingCharacters();
             setTrendingCharacters(data.map((char, index) => ({
                 ...char,
                 rank: index + 1,

@@ -3,7 +3,8 @@
 import { useState, useEffect } from "react";
 import { ChevronDown, MessageSquare } from "lucide-react";
 import Footer from "@/components/layout/Footer";
-import { CATEGORIES, getCharacterBySlugFromDB, getCharactersByCategoryFromDB } from "@/data/characters";
+import { CATEGORIES } from "@/data/characters";
+import { getCharacterBySlug, getCharactersByCategory } from "@/lib/services/characterService";
 import CategoryGrid from "@/components/categories/CategoryGrid";
 import { getAllActiveSlugs } from "@/lib/db";
 import CharacterCard, { Character } from "@/components/ui/CharacterCard";
@@ -26,7 +27,7 @@ export default function HomeScreen() {
         const loadRecent = async () => {
             const slugs = await getAllActiveSlugs();
             const characters = await Promise.all(
-                slugs.map(slug => getCharacterBySlugFromDB(slug))
+                slugs.map(slug => getCharacterBySlug(slug))
             );
             setRecentCharacters(characters.filter((c): c is Character => !!c));
         };
@@ -37,7 +38,7 @@ export default function HomeScreen() {
     useEffect(() => {
         const loadCategoryData = async () => {
             setIsLoading(true);
-            const data = await getCharactersByCategoryFromDB(activeCategory);
+            const data = await getCharactersByCategory(activeCategory);
             setCategoryCharacters(data);
             setIsLoading(false);
         };

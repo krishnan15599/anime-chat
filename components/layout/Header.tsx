@@ -5,7 +5,7 @@ import { useState, useEffect, useRef } from "react";
 import { Search, BookOpen, HelpCircle, ChevronDown, X, MessageSquare, Flame } from "lucide-react";
 import ThemeToggle from "@/components/ui/ThemeToggle";
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import { searchCharactersFromDB } from "@/data/characters";
+import { searchCharacters } from "@/lib/services/characterService";
 import { Character } from "@/components/ui/CharacterCard";
 import { useRouter } from "next/navigation";
 
@@ -23,7 +23,7 @@ export default function Header() {
         }
 
         const fetchResults = async () => {
-            const searchResults = await searchCharactersFromDB(query);
+            const searchResults = await searchCharacters(query);
             setResults(searchResults);
         };
 
