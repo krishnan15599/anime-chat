@@ -38,7 +38,7 @@ export async function getCharacterBySlug(slug: string): Promise<Character | null
 
         const { data: allData } = await supabase.from('characters').select('*');
         const normalize = (str: string) => str.toLowerCase().replace(/\s+/g, '-');
-        const found = (allData || []).find(c => normalize(c.name) === slug);
+        const found = (allData || []).find((c: any) => normalize(c.name) === slug);
         return found ? formatSingleCharacter(found) : null;
     }
 
