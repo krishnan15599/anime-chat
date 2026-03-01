@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import { ChevronDown, MessageSquare } from "lucide-react";
 import Footer from "@/components/layout/Footer";
 import { CATEGORIES } from "@/data/characters";
-import { getCharacterBySlug, getCharactersByCategory } from "@/lib/services/characterService";
+import { getCharactersBySlugs, getCharactersByCategory } from "@/lib/services/characterService";
 import CategoryGrid from "@/components/categories/CategoryGrid";
 import { getAllActiveSlugs } from "@/lib/db";
 import CharacterCard, { Character } from "@/components/ui/CharacterCard";
@@ -22,27 +22,26 @@ export default function HomeScreen() {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isLoading, setIsLoading] = useState(true);
 
-    // Load recent characters from local DB (IndexedDB) and sync with Supabase info
+    // Consolidated data loader
     useEffect(() => {
-        const loadRecent = async () => {
-            const slugs = await getAllActiveSlugs();
-            const characters = await Promise.all(
-                slugs.map(slug => getCharacterBySlug(slug))
-            );
-            setRecentCharacters(characters.filter((c): c is Character => !!c));
-        };
-        loadRecent();
-    }, []);
-
-    // Load characters for the active category from Supabase
-    useEffect(() => {
-        const loadCategoryData = async () => {
+        const loadAllData = async () => {
             setIsLoading(true);
-            const data = await getCharactersByCategory(activeCategory);
-            setCategoryCharacters(data);
-            setIsLoading(false);
+            try {
+                const slugs = await getAllActiveSlugs();
+                const response = await fetch(`/api/home?category=${encodeURIComponent(activeCategory)}&slugs=${encodeURIComponent(slugs.join(','))}`);
+                const data = await response.json();
+
+                if (data.error) throw new Error(data.error);
+
+                setRecentCharacters(data.recentCharacters || []);
+                setCategoryCharacters(data.categoryCharacters || []);
+            } catch (error) {
+                console.error("Failed to load home data:", error);
+            } finally {
+                setIsLoading(false);
+            }
         };
-        loadCategoryData();
+        loadAllData();
     }, [activeCategory]);
 
     const isAnimeCategory = animeCategories.includes(activeCategory);
