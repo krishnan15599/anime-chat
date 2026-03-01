@@ -7,6 +7,7 @@ import { getLastMessage, ChatMessage } from "@/lib/db";
 
 export interface Character {
     name: string;
+    slug?: string;
     tagline: string;
     description?: string;
     author: string;
