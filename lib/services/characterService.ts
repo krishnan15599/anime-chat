@@ -29,20 +29,41 @@ export async function getCharacterBySlug(slug: string): Promise<Character | null
         .from('characters')
         .select('*')
         .eq('slug', slug)
-        .single();
+        .maybeSingle();
 
-    if (error) {
-        // If error, it might be because the 'slug' column doesn't exist yet.
-        // Falling back to name matching to keep the app working for now.
-        console.warn("API Note: Could not find by slug column. Falling back to name search.");
+    if (error || !data) {
+        // Fallback: search by name if slug matching fails (inexact match)
+        const nameQuery = slug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        const { data: nameData } = await supabase
+            .from('characters')
+            .select('*')
+            .ilike('name', `%${nameQuery}%`)
+            .limit(1)
+            .maybeSingle();
 
-        const { data: allData } = await supabase.from('characters').select('*');
-        const normalize = (str: string) => str.toLowerCase().replace(/\s+/g, '-');
-        const found = (allData || []).find((c: any) => normalize(c.name) === slug);
-        return found ? formatSingleCharacter(found) : null;
+        return nameData ? formatSingleCharacter(nameData) : null;
     }
 
     return formatSingleCharacter(data);
+}
+
+// 2b. Efficiently fetch multiple characters by a list of slugs
+export async function getCharactersBySlugs(slugs: string[]): Promise<Character[]> {
+    if (!slugs.length) return [];
+
+    const { data, error } = await supabase
+        .from('characters')
+        .select('*')
+        .in('slug', slugs);
+
+    if (error) {
+        console.error("API Error [getCharactersBySlugs]:", error);
+        return [];
+    }
+
+    // Since 'slug' matching might miss some (if column doesn't match perfectly),
+    // we return what we found, formatted.
+    return formatCharacterData(data);
 }
 
 // 3. Search characters with clean query handling
